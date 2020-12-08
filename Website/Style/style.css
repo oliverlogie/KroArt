@@ -30,6 +30,11 @@ p{
     max-width: 1000px;
 }
 
+body, html{
+    margin:0;
+    padding:0;
+}
+
 
 /* ----------------------------------------------------------- Navbar --------------------------------------------------------- */
 
@@ -40,14 +45,17 @@ p{
 
 .navbar-nav > li{
     font-size: 22px;
+    font-family: "nunito";
+    margin-left: 25px;
 }
 
+.navbar-nav > li > a{
+   color: black !important; 
+}
 
 .navbarBag{
     width:35px;
-    padding-bottom: 5px;
 }
-
 
 .logoMobile{
     display:none;
@@ -56,15 +64,7 @@ p{
 }
 
 .searchbar{
-
-}
-
-.searchbar{
     display:none;
-}
-
-.navbarOwn > li{
-    padding-right: 9px;
 }
 
 @media (max-width: 990px){
