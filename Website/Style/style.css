@@ -29,3 +29,61 @@ p{
 .conactDaten{
     max-width: 1000px;
 }
+
+
+/* ----------------------------------------------------------- Navbar --------------------------------------------------------- */
+
+.logo{
+    width: 400px;
+    height: 80px;
+}
+
+.navbar-nav > li{
+    font-size: 22px;
+}
+
+
+.navbarBag{
+    width:35px;
+    padding-bottom: 5px;
+}
+
+
+.logoMobile{
+    display:none;
+    width: 220px;
+    height: 40px;
+}
+
+.searchbar{
+
+}
+
+.searchbar{
+    display:none;
+}
+
+.navbarOwn > li{
+    padding-right: 9px;
+}
+
+@media (max-width: 990px){
+    .logoMobile{
+        display: block;
+    }
+    .searchbar{
+        display: block;
+    }
+    
+}
+
+@media (max-width: 1400px){
+    .logo{
+        display:none;
+    }
+    .logoMobile{
+        display: block;
+    }
+}
+
+/* ----------------------------------------------------------- Navbar --------------------------------------------------------- */
