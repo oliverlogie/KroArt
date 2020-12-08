@@ -17,10 +17,15 @@ body{
 }
 h1{
     font-family: "nunito";
+   
 }
 p{
     font-family:"monserrat";
+    font-size: 22px;
 }
 .textEnglish{
     color: #757373;
+}
+.conactDaten{
+    max-width: 1000px;
 }
