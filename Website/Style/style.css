@@ -1,0 +1,26 @@
+/* Fonts */
+@font-face {
+    font-family: 'nunito'; /* Überschrift Font*/
+    src: url('../fonts/nunito-sans/NunitoSans-Regular.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}@font-face {
+    font-family: 'monserrat'; /* Paragraph Font*/
+    src: url('../fonts/montserrat/Montserrat-Light.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    background-color: #fffdfb;
+}
+h1{
+    font-family: "nunito";
+}
+p{
+    font-family:"monserrat";
+}
+.textEnglish{
+    color: #757373;
+}
