@@ -1,4 +1,3 @@
-
 <?php  include_once('../includes/navbar.php'); ?>
 <main>
     <div class="conactDaten container d-block d-lg-flex p-lg-5 p-4 text-center">

@@ -18,11 +18,11 @@
             
             <div class="row d-lg-flex d-md-flex d-none pt-3">
                 <ul class="d-flex pl-0 ml-0">
-                    <li><a href=""> about</a></li>
-                    <li><a href=""> artists</a></li>
+                    <li><a href="../About/about.php"> about</a></li>
+                    <li><a href="../Artists/srtists.php"> artists</a></li>
                     <li>
                         <div class="dropdown">
-                            <a href=""> <span class="dropbtn">categories  <i class="fa fa-caret-down"></i>
+                            <a href="../Categories/categories.php"> <span class="dropbtn">categories <i class="fa fa-caret-down d-none d-lg-inline"></i>
                         </span></a> 
                             <div class="dropdown-content">
                             <a href="#">categorie 1</a>
@@ -33,9 +33,9 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href=""> news</a></li>
-                    <li><a href=""> contact</a></li>
-                    <li> <a href="" class="bagImg">collect<img src="../img/shopping-bag.png" class="pl-2" alt="bag" width="35px" height="25px"></a></li>
+                    <li><a href="../News/news.php"> news</a></li>
+                    <li><a href="../Contact/contact.php"> contact</a></li>
+                    <li> <a href="../Collect/collect.php" class="bagImg">collect<img src="../img/shopping-bag.png" class="pl-2" alt="bag" width="35px" height="25px"></a></li>
                 </ul>
             </div>
 
@@ -43,11 +43,11 @@
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="overlay-content">
                     <a href="../About/about.html">About</a>
-                    <a href="#">Artists</a>
-                    <a href="#">Categories</a>
-                    <a href="#">News</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Collect<img src="../img/shopping-bag-white.png" class="pl-2" alt="bag" width="40px" height="40px"></a>
+                    <a href="../Artists/srtists.php">Artists</a>
+                    <a href="../Categories/categories.php">Categories</a>
+                    <a href="../News/news.php">News</a>
+                    <a href="../Contact/contact.php">Contact</a>
+                    <a href="../Collect/collect.php">Collect<img src="../img/shopping-bag-white.png" class="pl-2" alt="bag" width="40px" height="40px"></a>
                     <form class="searchOption pt-2 pb-5" action="#.php">
                         <input class="searchForm" type="text" placeholder="Search.." name="search">
                         <button class="searchButton  btn btn-dark" type="submit"><i class="fa fa-search"></i></button>
@@ -56,8 +56,8 @@
                 <div class="overlay-content">
                     <a href="">Newsletter</a>
                     <div class="d-flex justify-content-center">
-                        <a href=""><img src="../img/insta-white-icon.png" width="50px" alt="insta-white-icon"></a>
-                        <a href=""><img src="../img/fb-white-icon.png" width="50px" alt="fb-white-icon"></a>
+                        <a href="https://www.instagram.com/artwork_vienna/"><img src="../img/insta-white-icon.png" width="50px" alt="insta-white-icon"></a>
+                        <a href="https://www.facebook.com/ArtworkCoworking/"><img src="../img/fb-white-icon.png" width="50px" alt="fb-white-icon"></a>
                     </div>
                 </div>
 

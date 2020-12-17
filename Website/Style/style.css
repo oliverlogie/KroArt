@@ -16,12 +16,24 @@ body{
     background-color: #fffdfb;
 }
 h1{
-    font-family: "nunito";
-   
+    font-family: "nunito"; 
+}
+h3{
+  font-family: "nunito"; 
+  font-size: 26px;
+}
+h4{
+  font-family: "nunito"; 
+  font-size: 24px;
 }
 p{
     font-family:"monserrat";
-    font-size: 22px;
+    font-size: 18px;
+}
+a{
+  text-transform: uppercase;
+  font-size: 12px;
+
 }
 
 .textEnglish{
@@ -165,13 +177,14 @@ iFrame{
   padding: 10px 20px;
 }
   
+
  
-<<<<<<< HEAD
-/* ----------------------------------------------------------- Navbar --------------------------------------------------------- */
+/* ----------------------------------------------------------- Navbar End--------------------------------------------------------- */
+
+
 
 
 /* ----------------------------------------------------------- HOME PAGE --------------------------------------------------------- */
-
 .carousel-inner{
   height: auto;
 }
@@ -182,13 +195,71 @@ iFrame{
   height: 450px;
 }
 
-.home-container{
-  border-top: 2px solid #ae2b0a;
-  border-bottom: 2px solid #ae2b0a;
+.home-container h3 {
+  width: 100%;
+  margin: .7em auto;
+  overflow: hidden;
+  text-align: center;
+  font-weight:300;
+}
+.news_line:before, .news_line:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  margin: 0 .5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+  border:1px solid #ae2b0a
+}
+.news_line:after {
+  margin: 0 -55% 0 .5em;
 }
 
-=======
-/* ----------------------------------------------------------- Navbar end--------------------------------------------------------- */
+.img_News{
+  max-width: 100%;
+  width: 350px;
+  height: 100%;
+
+}
+@media only screen and (max-width: 770px) {
+  .img_News{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+  
+  }
+} @media only screen and (max-width: 989px) {
+  .img_News{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+  
+  }
+}
+
+.date{
+  border: 0 solid transparent;
+}
+/*---------------------- BUTTON ------------- */ 
+
+.button-News{
+  text-align: center;
+  border: 1px solid #ae2b0a; 
+  border-radius: 10px;
+  max-width: 100%;
+  width: 120px;
+  height: 30px;
+  float: right;
+}
+.button-News:hover{
+  color: white !important;
+  background-color: black;
+  border: 2px solid #ae2b0a;
+}
+.button-News a:hover{
+  color: white !important;
+}
+/* ----------------------------------------------------------- HOME PAGE End --------------------------------------------------------- */
 
 .box{
   width:100px;
@@ -197,4 +268,3 @@ iFrame{
 }
 
 /* ----------------------------------------------------------- Footer --------------------------------------------------------- */
->>>>>>> 79869826b02ee053394d0ae67441cc20803a856d
