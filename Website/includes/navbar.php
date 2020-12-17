@@ -1,3 +1,5 @@
+<?php
+include_once('../backend/db_connect.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +15,7 @@
     <nav>
         <div class="container d-flex justify-content-between p-4">
             <div class="row ">
-                <a href="#"><img class="logo" src="../img/logo_01.png" alt="logo"></a>
+                <a href="../Home/index.php "><img class="logo" src="../img/logo_01.png" alt="logo"></a>
             </div>
             
             <div class="row d-lg-flex d-md-flex d-none pt-3">
