@@ -50,7 +50,7 @@
         </div>
         <div class="container">
             <div class=""><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nihil modi magnam sunt perferendis soluta porro dolorum enim. Fuga nobis quos tempore architecto dolore, aliquid blanditiis natus sunt in optio?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nihil modi magnam sunt perferendis soluta porro dolorum enim. Fuga nobis quos tempore architecto dolore, aliquid blanditiis natus sunt in optio?</p></div>
-            <div class="button-News"><a href="../News/news.php" class="">see more</a></div>
+            <div class="button-News"><a href="../News/news.php" class=""><button>see more</button></a></div>
         </div>
       </div>
     </div>

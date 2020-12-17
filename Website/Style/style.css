@@ -267,6 +267,10 @@ iFrame{
   height: 30px;
   float: right;
 }
+.button-News a{
+  font-size: 16px !important; 
+
+}
 .button-News:hover{
   color: white !important;
   background-color: black;
@@ -279,7 +283,9 @@ button{
   background-color: transparent;
   color: #2d2d34;
   border: 0px solid transparent;
-    font-family:"monserrat";
+  font-family:"monserrat";
+  font-size: 16px !important; 
+
 
 }
 button:hover{
