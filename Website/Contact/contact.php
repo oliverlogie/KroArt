@@ -1,5 +1,4 @@
-
-        <?php  include_once('../includes/navbar.php'); ?>
+<?php  include_once('../includes/navbar.php'); ?>
      </header>
     <main>
         <div class="conactDaten container d-block d-lg-flex p-lg-5 p-4 text-center">
