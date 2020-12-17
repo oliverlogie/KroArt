@@ -1,5 +1,5 @@
 <?php
-include_once('../backend/db_connect.php')
+include_once('../backend/db_connect.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
