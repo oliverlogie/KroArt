@@ -32,6 +32,11 @@ h4{
   color: #2d2d34;
 
 }
+h5{
+  font-family: "nunito"; 
+  font-size: 20px;
+  color: #2d2d34;
+}
 p{
     font-family:"monserrat";
     font-size: 18px;
@@ -86,7 +91,7 @@ li {
 
 a:hover{
     text-decoration: none;
-    color: #ae2b0a;
+    color: #ae2b0a !important;
 } 
 .dropdown .dropbtn { 
   color: black;
@@ -233,24 +238,9 @@ iFrame{
 
 .img_News{
   max-width: 100%;
-  width: 350px;
+  width: 100%;
   height: 100%;
 
-}
-@media only screen and (max-width: 770px) {
-  .img_News{
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-  
-  }
-} @media only screen and (max-width: 989px) {
-  .img_News{
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-  
-  }
 }
 
 .date{
@@ -302,3 +292,13 @@ button:hover{
 }
 
 /* ----------------------------------------------------------- Footer --------------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------------- Art Categories --------------------------------------------------------- */
+
+
+.artCategories img {
+  max-width: 100%;
+  width: 100%;
+}

@@ -39,17 +39,15 @@
       <h1><span class="news_line">Last News</span></h1>
     </div>
 
-    <div class="container d-block d-lg-flex d-md-flex p-5 pb-5 mb-5 justify-content-center "> 
-      <div class="row text-center p-0 m-0 pb-5">
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-12">
           <img class="img_News" src="../img/newsimg.jpg" alt="">
-      </div>
-      <div class="ro pl-0 pl-lg-5 pl-md-5">
-        <div class="container d-flex justify-content-between">
+        </div>
+        <div class="col-lg-9 col-md-8 col-sm-12 pt-5">
           <div><h4>Überschrift</h4></div>
           <div><input class="date" type="date" name="" id=""></div>
-        </div>
-        <div class="container">
-            <div class=""><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nihil modi magnam sunt perferendis soluta porro dolorum enim. Fuga nobis quos tempore architecto dolore, aliquid blanditiis natus sunt in optio?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nihil modi magnam sunt perferendis soluta porro dolorum enim. Fuga nobis quos tempore architecto dolore, aliquid blanditiis natus sunt in optio?</p></div>
+          <div class=""><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nihil modi magnam sunt perferendis soluta porro dolorum enim. Fuga nobis quos tempore architecto dolore, aliquid blanditiis natus sunt in optio?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nihil modi magnam sunt perferendis soluta porro dolorum enim. Fuga nobis quos tempore architecto dolore, aliquid blanditiis natus sunt in optio?</p></div>
             <div class="button-News"><a href="../News/news.php" class=""><button>see more</button></a></div>
         </div>
       </div>
