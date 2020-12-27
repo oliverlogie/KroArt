@@ -27,7 +27,7 @@ include_once('../backend/db_connect.php');?>
                             <a href="../ArtCategories/art_categories.php"> <span class="dropbtn">categories <i class="fa fa-caret-down d-none d-lg-inline"></i>
                         </span></a> 
                             <div class="dropdown-content">
-                            <a href="#">categorie 1</a>
+                            <a href="../malerei/malerei.php">Malerei / Painting</a>
                             <a href="#">categorie 2</a>
                             <a href="#">categorie 3</a>
                             <a href="#">categorie 4</a>
