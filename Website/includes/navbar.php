@@ -21,23 +21,23 @@ include_once('../backend/db_connect.php');?>
             <div class="row d-lg-flex d-md-flex d-none pt-3">
                 <ul class="d-flex pl-0 ml-0">
                     <li><a href="../About/about.php"> about</a></li>
-                    <li><a href="../Artists/srtists.php"> artists</a></li>
+                    <li><a href="../artists/artists.php"> artists</a></li>
                     <li>
                         <div class="dropdown">
                             <a href="../ArtCategories/art_categories.php"> <span class="dropbtn">categories <i class="fa fa-caret-down d-none d-lg-inline"></i>
                         </span></a> 
                             <div class="dropdown-content">
                             <a href="../malerei/malerei.php">Malerei / Painting</a>
-                            <a href="#">categorie 2</a>
-                            <a href="#">categorie 3</a>
-                            <a href="#">categorie 4</a>
-                            <a href="#">categorie 5</a>
+                            <a href="../fotografie/fotografie.php">Fotografie / Photography</a>
+                            <a href="../grafik/grafik.php">Grafik & Druckgrafik / Drawing & Printmaking</a>
+                            <a href="../skulptur/skulptur.php">Objekt & Skulptur</a>
+                            <a href="../andere/andere_medien.php">andere Medien / other techniques</a>
                             </div>
                         </div>
                     </li>
                     <li><a href="../News/news.php"> news</a></li>
                     <li><a href="../Contact/contact.php"> contact</a></li>
-                    <li> <a href="../Collect/collect.php" class="bagImg">collect<img src="../img/shopping-bag.png" class="pl-2" alt="bag" width="35px" height="25px"></a></li>
+                    <li> <a href="../collect/collect.php" class="bagImg">collect<img src="../img/shopping-bag.png" class="pl-2" alt="bag" width="35px" height="25px"></a></li>
                 </ul>
             </div>
 
@@ -45,11 +45,11 @@ include_once('../backend/db_connect.php');?>
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="overlay-content">
                     <a href="../About/about.html">About</a>
-                    <a href="../Artists/srtists.php">Artists</a>
+                    <a href="../artists/artists.php">Artists</a>
                     <a href="../ArtCategories/art_categories.php">Categories</a>
                     <a href="../News/news.php">News</a>
                     <a href="../Contact/contact.php">Contact</a>
-                    <a href="../Collect/collect.php">Collect<img src="../img/shopping-bag-white.png" class="pl-2" alt="bag" width="40px" height="40px"></a>
+                    <a href="../collect/collect.php">Collect<img src="../img/shopping-bag-white.png" class="pl-2" alt="bag" width="40px" height="40px"></a>
                     <form class="searchOption pt-2 pb-5" action="#.php">
                         <input class="searchForm" type="text" placeholder="Search.." name="search">
                         <button class="searchButton  btn btn-dark" type="submit"><i class="fa fa-search"></i></button>

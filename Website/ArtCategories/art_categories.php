@@ -7,20 +7,20 @@
       <a href="../malerei/malerei.php">Malerei / Painting</a>
     </div>
     <div class="artCategorie col-lg-4 col-md-6 col-sm-6 mb-5">
-      <a href=""><img src="../img/newsimg.jpg" alt=""></a>
-      <a href="">Fotografie / Photography</a>
+      <a href="../fotografie/fotografie.php"><img src="../img/newsimg.jpg" alt=""></a>
+      <a href="../fotografie/fotografie.php">Fotografie / Photography</a>
     </div>
     <div class="artCategorie col-lg-4 col-md-6 col-sm-6 mb-5">
-      <a href=""><img src="../img/newsimg.jpg" alt=""></a>
-      <a href="">Grafik & Druckgrafik / Drawing & Printmaking</a>
+      <a href="../grafik/grafik.php"><img src="../img/newsimg.jpg" alt=""></a>
+      <a href="../grafik/grafik.php">Grafik & Druckgrafik / Drawing & Printmaking</a>
     </div>
     <div class="artCategorie col-lg-4 col-md-6 col-sm-6 mb-5">
-      <a href=""><img src="../img/newsimg.jpg" alt=""></a>
-      <a href="">Objekt & Skulptur</a>
+      <a href="../skulptur/skulptur.php"><img src="../img/newsimg.jpg" alt=""></a>
+      <a href="../skulptur/skulptur.php">Objekt & Skulptur</a>
     </div>
     <div class="artCategorie col-lg-4 col-md-6 col-sm-6 mb-5">
-      <a href=""><img src="../img/newsimg.jpg" alt=""></a>
-      <a href="">andere Medien / other techniques</a>
+      <a href="../andere/andere_medien.php"><img src="../img/newsimg.jpg" alt=""></a>
+      <a href="../andere/andere_medien.php">andere Medien / other techniques</a>
     </div>
 </div>
 </main>

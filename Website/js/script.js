@@ -1,6 +1,7 @@
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
   
+
   var x = document.getElementById("carousel-indicators");
   if (x.style.display === "none") {
     x.style.display = "flex";

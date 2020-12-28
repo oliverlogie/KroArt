@@ -1,4 +1,5 @@
 <?php  include_once('../includes/navbar.php'); ?>
+<main>
     <div class="container home-container mt-5">
       <h1><span class="news_line">News</span></h1>
     </div>
@@ -17,5 +18,5 @@
         </div>
       </div>
     </div>
-     
+</main>   
 <?php include_once('../includes/footer.php') ?>

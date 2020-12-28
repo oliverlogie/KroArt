@@ -1,17 +1,35 @@
 
 <footer>
-  <div class="row justify-content-center text-center">
-    <div class="col-3 ">
-      One of two columns
-    </div>
-    <div class="col-3">
-      One of two columns
-    </div>
-    <div class="col-3">
-      One of three columns
+<div class="container p-4"> 
+    <div class="row d-block d-xl-flex d-lg-flex d-md-flex   justify-content-center rowFooter">
+      <div class="col-lg-3 d-none d-lg-flex d-md-flex  iconFooter">
+        <a href="https://www.instagram.com/artwork_vienna/"><img src="../img/insta-icon.png" alt="insta-icon"></a>
+        <a href="https://www.facebook.com/ArtworkCoworking/"><img src="../img/fb-icon.png" alt="fb-icon"></a>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 ">
+        <ul>
+          <li><a href="">Impressum</a></li>
+          <li><a href="">Datenshutz</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 ">
+        <ul class="d-none d-lg-block d-md-block ">
+          <li><a href="../News/news.php"> news</a></li>
+          <li><a href="../About/about.php"> about</a></li>
+          <li><a href="../Contact/contact.php">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <ul class="d-block">
+          <li><a href="" class="newsletter mb-3">Newsletter</a></li>
+          <li><form action="/action_page.php" class="d-flex searchFooter">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form></li>
+        </ul>
+      </div>
     </div>
   </div>
-  <!-- Footer Links -->
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
