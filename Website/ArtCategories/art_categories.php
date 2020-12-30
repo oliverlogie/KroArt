@@ -1,4 +1,7 @@
-<?php  include_once('../includes/navbar.php'); ?>
+<?php  
+include_once('../includes/navbar.php'); 
+include_once('../backend/art_categoriesDB.php');
+?>
 <main>
 <div class="container pt-5 pb-5">
   <div class="row artCategories justify-content-center">
@@ -22,6 +25,7 @@
       <a href="../andere/andere_medien.php"><img src="../img/newsimg.jpg" alt=""></a>
       <a href="../andere/andere_medien.php">andere Medien / other techniques</a>
     </div>
+  </div>
 </div>
 </main>
 <?php include_once('../includes/footer.php') ?>
