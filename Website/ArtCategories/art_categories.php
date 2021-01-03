@@ -1,6 +1,5 @@
 <?php  
 include_once('../includes/navbar.php'); 
-include_once('../backend/art_categoriesDB.php');
 ?>
 <main>
 <div class="container pt-5 pb-5">
