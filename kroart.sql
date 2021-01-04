@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 07. Dez 2020 um 18:44
--- Server-Version: 10.4.11-MariaDB
--- PHP-Version: 7.4.3
+-- Erstellungszeit: 04. Jan 2021 um 15:26
+-- Server-Version: 10.4.17-MariaDB
+-- PHP-Version: 8.0.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -44,7 +43,8 @@ CREATE TABLE `artist` (
 
 INSERT INTO `artist` (`artist_id`, `name`, `exh`, `ssa`, `bio`) VALUES
 (1, 'Peter', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'),
-(2, 'Lisa', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.');
+(2, 'Lisa', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'),
+(3, 'Leonardo', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.');
 
 -- --------------------------------------------------------
 
@@ -54,10 +54,10 @@ INSERT INTO `artist` (`artist_id`, `name`, `exh`, `ssa`, `bio`) VALUES
 
 CREATE TABLE `artwork` (
   `artwork_id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
+  `name_pic` varchar(255) NOT NULL,
   `picture` varchar(255) NOT NULL,
   `price` int(11) NOT NULL,
-  `measurement` int(11) NOT NULL,
+  `measurement` varchar(20) NOT NULL,
   `fk_category` int(11) NOT NULL,
   `fk_technic` int(11) NOT NULL,
   `fk_artist_id` int(11) NOT NULL
@@ -67,11 +67,12 @@ CREATE TABLE `artwork` (
 -- Daten für Tabelle `artwork`
 --
 
-INSERT INTO `artwork` (`artwork_id`, `name`, `picture`, `price`, `measurement`, `fk_category`, `fk_technic`, `fk_artist_id`) VALUES
-(3, 'Bella', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata', 123, 123123, 1, 1, 2),
-(4, 'Rome', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita k duo dolores et ea rebum. Stet', 435, 24364, 2, 2, 1),
-(5, 'Blue', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores sanctus est Lorem ipsum dolor sit amet.', 123, 123123, 1, 1, 2),
-(6, 'Red', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita k duo dolores et ea rebum. Stet', 435, 24364, 2, 2, 1);
+INSERT INTO `artwork` (`artwork_id`, `name_pic`, `picture`, `price`, `measurement`, `fk_category`, `fk_technic`, `fk_artist_id`) VALUES
+(3, 'Bella', 'img/newsimg.jpg', 123, '20 x 20', 1, 1, 1),
+(4, 'Rome', 'img/1.jpg', 435, '30 x 40', 3, 1, 1),
+(5, 'Blue', 'img/2.jpg', 123, '10 x 10', 4, 1, 2),
+(6, 'Red', 'img/newsimg.jpg', 435, '23 x 45', 2, 2, 3),
+(7, 'anna', 'img/newsimg.jpg', 54635, '17 x 40', 5, 1, 2);
 
 -- --------------------------------------------------------
 
@@ -89,8 +90,11 @@ CREATE TABLE `category` (
 --
 
 INSERT INTO `category` (`category_id`, `category`) VALUES
-(1, 'Hammer'),
-(2, 'Messer');
+(1, 'MALEREI / PAINTING'),
+(2, 'FOTOGRAFIE / PHOTOGRAPHY'),
+(3, 'GRAFIK & DRUCKGRAFIK / DRAWING & PRINTMAKING'),
+(4, 'OBJEKT & SKULPTUR'),
+(5, 'ANDERE MEDIEN / OTHER TECHNIQUES');
 
 -- --------------------------------------------------------
 
@@ -105,6 +109,33 @@ CREATE TABLE `news` (
   `text` text NOT NULL,
   `picture` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Daten für Tabelle `news`
+--
+
+INSERT INTO `news` (`news_id`, `headline`, `date`, `text`, `picture`) VALUES
+(1, 'NEWS 1', '2020-12-16', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nihil modi magnam sunt perferendis soluta porro dolorum enim. Fuga nobis quos tempore architecto dolore, aliquid blanditiis natus sunt in optio?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nihil modi magnam sunt perferendis soluta porro dolorum enim. Fuga nobis quos tempore architecto dolore, aliquid blanditiis natus sunt in optio?', 'img/newsimg.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `slider_images`
+--
+
+CREATE TABLE `slider_images` (
+  `img_id` int(11) NOT NULL,
+  `img_slider` varchar(255) NOT NULL,
+  `img_slider_name` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Daten für Tabelle `slider_images`
+--
+
+INSERT INTO `slider_images` (`img_id`, `img_slider`, `img_slider_name`) VALUES
+(1, 'img/1.JPG', 'Bella'),
+(2, 'img/2.JPG', 'ROsa');
 
 -- --------------------------------------------------------
 
@@ -140,7 +171,6 @@ ALTER TABLE `artist`
 --
 ALTER TABLE `artwork`
   ADD PRIMARY KEY (`artwork_id`),
-  ADD KEY `fk_artist_id` (`fk_artist_id`),
   ADD KEY `fk_category` (`fk_category`),
   ADD KEY `fk_technic` (`fk_technic`);
 
@@ -157,6 +187,12 @@ ALTER TABLE `news`
   ADD PRIMARY KEY (`news_id`);
 
 --
+-- Indizes für die Tabelle `slider_images`
+--
+ALTER TABLE `slider_images`
+  ADD PRIMARY KEY (`img_id`);
+
+--
 -- Indizes für die Tabelle `technic`
 --
 ALTER TABLE `technic`
@@ -170,25 +206,31 @@ ALTER TABLE `technic`
 -- AUTO_INCREMENT für Tabelle `artist`
 --
 ALTER TABLE `artist`
-  MODIFY `artist_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `artist_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT für Tabelle `artwork`
 --
 ALTER TABLE `artwork`
-  MODIFY `artwork_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `artwork_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT für Tabelle `category`
 --
 ALTER TABLE `category`
-  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT für Tabelle `news`
 --
 ALTER TABLE `news`
-  MODIFY `news_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `news_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT für Tabelle `slider_images`
+--
+ALTER TABLE `slider_images`
+  MODIFY `img_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT für Tabelle `technic`

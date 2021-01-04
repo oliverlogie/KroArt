@@ -1,5 +1,5 @@
 <?php  include_once('../includes/navbar.php'); 
-$sql_artist = "SELECT DISTINCT artist.artist_id, artist.name, picture, ssa, exh,bio FROM (artwork INNER JOIN artist ON artwork.fk_artist_id = artist.artist_id)";
+$sql_artist = "SELECT artist.artist_id, artist.name, picture, ssa, exh,bio FROM (artwork INNER JOIN artist ON artwork.fk_artist_id = artist.artist_id) GROUP BY artist_id";
 $result_artist = $conn->query($sql_artist);
 ?>
 <main>
