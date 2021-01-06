@@ -30,7 +30,7 @@ $result_category = $conn->query($sql_category);?>
                         </span></a> 
                             <div class="dropdown-content">
                             <?php while($row = mysqli_fetch_assoc($result_category)){
-                            echo '<a href="../grafik/grafik.php?id=' . $row['category_id'] . '"> '. $row["category"] .'</a>';
+                            echo '<a href="../art_category_info/art_info.php?id=' . $row['category_id'] . '"> '. $row["category"] .'</a>';
                             }
                             ?>
                         </div>
