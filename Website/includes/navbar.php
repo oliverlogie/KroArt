@@ -1,5 +1,7 @@
 <?php
-include_once('../backend/db_connect.php');?>
+include_once('../backend/db_connect.php');
+$sql_category = "SELECT * FROM category";
+$result_category = $conn->query($sql_category);?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,12 +29,10 @@ include_once('../backend/db_connect.php');?>
                             <a href="../ArtCategories/art_categories.php"> <span class="dropbtn">categories <i class="fa fa-caret-down d-none d-lg-inline"></i>
                         </span></a> 
                             <div class="dropdown-content">
-                            <a href="../malerei/malerei.php">Malerei / Painting</a>
-                            <a href="../fotografie/fotografie.php">Fotografie / Photography</a>
-                            <a href="../grafik/grafik.php">Grafik & Druckgrafik / Drawing & Printmaking</a>
-                            <a href="../skulptur/skulptur.php">Objekt & Skulptur</a>
-                            <a href="../andere/andere_medien.php">andere Medien / other techniques</a>
-                            </div>
+                            <?php while($row = mysqli_fetch_assoc($result_category)){
+                            echo '<a href="../grafik/grafik.php?id=' . $row['category_id'] . '"> '. $row["category"] .'</a>';
+                            }
+                            ?>
                         </div>
                     </li>
                     <li><a href="../News/news.php"> news</a></li>
