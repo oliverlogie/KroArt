@@ -9,23 +9,43 @@ $result_news = $conn->query($sql_news);
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>   
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="carousel-img d-block" src="../img/1.JPG" alt="First slide">
+            <img class="carousel-img d-block" src="../img/c_pic3.jpg" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="carousel-img d-block" src="../img/2.JPG" alt="Second slide">
+            <img class="carousel-img d-block" src="../img/c_pic2.jpg" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="carousel-img d-block" src="../img/3.JPG" alt="Third slide">
+            <img class="carousel-img d-block" src="../img/c_pic1.JPG" alt="Third slide">
           </div>
           <div class="carousel-item">
-            <img class="carousel-img d-block" src="../img/4.JPG" alt="Fourth slide">
+            <img class="carousel-img d-block" src="../img/c_pic4.JPG" alt="Fourth slide">
           </div>
           <div class="carousel-item">
-            <img class="carousel-img d-block" src="../img/5.png" alt="Fifth slide">
+            <img class="carousel-img d-block" src="../img/c_pic5.JPG" alt="Fifth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="carousel-img d-block" src="../img/c_pic6.JPG" alt="sixth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="carousel-img d-block" src="../img/c_pic7.JPG" alt="seventh slide">
+          </div>
+          <div class="carousel-item">
+            <img class="carousel-img d-block" src="../img/c_pic8.JPG" alt="eight slide">
+          </div>
+          <div class="carousel-item">
+            <img class="carousel-img d-block" src="../img/c_pic9.JPG" alt="nineth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="carousel-img d-block" src="../img/c_pic10.jpg" alt="tenth slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" id="courusel-btn-1" role="button" data-slide="prev">
@@ -40,20 +60,20 @@ $result_news = $conn->query($sql_news);
 
     <?php
       echo '<div class="container home-container  pt-5 mt-5">';
-      echo '<h1><span class="news_line">News</span></h1>';
+      echo '<h1><span class="news_line">Last news</span></h1>';
       echo '</div>';
       echo '';
       if ($result_news-> num_rows > 0){
         while ($row = $result_news-> fetch_assoc()){
       echo '<div class="container p-5">';
-      echo '<div class="row">';
+      echo '<div class="row d-flex">';
       echo '<div class="col-lg-3 col-md-4 col-sm-12">';
       echo "<img class='img_News' src='../".$row['picture']."' />";
       echo '</div>';
       echo '<div class="col-lg-9 col-md-8 col-sm-12 pt-5">';
       echo '<div><h4>'. $row["headline"] .'</h4></div>';
-      echo '<div class="date">'. $row["date"] .'</div>';
-      echo '<div class=""><p>'. $row["text"].'</p></div>';
+      echo '<div class="date">'. $row["daten"] .'</div>';
+      echo '<div class=""><p>'. $row["textn"].'</p></div>';
       echo '<div class="button-News"><a href="../News/news.php" class=""><button>see more</button></a></div>';
       echo '</div>';
       echo '</div>';

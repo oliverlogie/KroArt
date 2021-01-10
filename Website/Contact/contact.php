@@ -1,15 +1,17 @@
 <?php  include_once('../includes/navbar.php'); ?>
 <main>
-    <div class="conactDaten container d-block d-lg-flex p-lg-5 p-4 text-center">
-        <div class="row col-sm-12 col-md-12 col-lg-7 m-0 p-0 pb-5 pt-5 text-center">
+    <div class="conactDaten container p-lg-5 p-4">
+        <div class="row d-block d-lg-flex text-center ">
+        <div class="col-sm-12 col-md-12 col-lg-7 m-0 p-0 pb-5 pt-5 text-center">
             <img src="../img/coworkSpace.png" class="img-fluid" alt="Artwork Cowork Space">
         </div>
-        <div class="row col-sm-12 col-md-12 col-lg-5 d-block m-0 p-0 pt-5 pb-5 text-center">
+        <div class="col-sm-12 col-md-12 col-lg-5 d-block m-0 p-0 pt-5 pb-5 text-center">
             <p>Adress</p>
             <p>Email</p>
             <p>Ansprechsperson</p>
             <p>Iban</p>
             <p>Usw.</p>
+        </div>
         </div>
     </div>
     <div class="iFrame container pb-5 text-center" >

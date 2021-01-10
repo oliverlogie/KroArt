@@ -9,12 +9,14 @@ $result_category = $conn->query($sql_category);
 <div class="container text-center pt-5 pb-5">
 <?php
 while($row = mysqli_fetch_assoc($result_category)){
-echo '<h1>'. $row["category"].'</h1>';
+echo '<h1 class="text-center">'. $row["category"].'</h1>';
 }
 ?>
+<div class="row d-flex mt-5">
+
+
   <?php
   while($row = mysqli_fetch_assoc($result_pic)){
-    echo '<div class="row d-flex mt-5">';
     echo '<div class="card border col-lg-3 col-md-4 col-sm-6  text-left">';
     echo '<a href="../artist_Info/artist_info.php?id=' . $row['artist_id'] . '"><img class="card-img-top" src="../'. $row["picture"] .'" alt=""></a>';
     echo '<div class="card-body">';
@@ -30,9 +32,9 @@ echo '<h1>'. $row["category"].'</h1>';
     echo '<p><button type="button" class="buttonADD">ADD</button></p>';
     echo '</div>';
     echo '</div>';
-    echo '</div>';
   }
   ?>
+</div>
 </div>
 </main>
 <?php include_once('../includes/footer.php') ?>
