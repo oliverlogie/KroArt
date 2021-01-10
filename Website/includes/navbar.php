@@ -1,7 +1,8 @@
 <?php
 include_once('../backend/db_connect.php');
 $sql_category = "SELECT * FROM category";
-$result_category = $conn->query($sql_category);?>
+$result_category = $conn->query($sql_category);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

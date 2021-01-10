@@ -9,7 +9,7 @@ $result_category = $conn->query($sql_category);
 while($row = mysqli_fetch_assoc($result_category)){
 echo '<div class="row artCategories justify-content-center">';
 echo '<div class="artCategorie col-lg-4 col-md-6 col-sm-6 mb-5">';
-echo '<a href="../art_category_info/art_info.php?id=' . $row['category_id'] . '"><img src="../img/newsimg.jpg" alt=""></a>';
+echo '<a href="../art_category_info/art_info.php?id=' . $row['category_id'] . '"><img class="card-img-top" src="../'. $row["picture"] .'" alt=""></a>';
 echo '<a href="../malerei/malerei.php">'. $row["category"] .  '</a>';
 echo '</div>';
 }
