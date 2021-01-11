@@ -18,7 +18,7 @@
     </div>
     <div class="input-group">
         <label>Picture</label>
-        <input type="file" name="picture" value=""><span name="old" value="<?php echo $fileName?>"><?php echo $fileName?></span>
+        <input type="file" name="picture" value="<?php echo '../img/' . $fileName ?>">
     </div>
     <div class="input-group">
 		<?php if($update == true){
@@ -45,7 +45,7 @@
 			<td class="border"><?php echo $row['headline']; ?></td>
 			<td class="border"><?php echo $row['textn']; ?></td>
 			<td class="border"><?php echo $row['daten']; ?></td>
-			<td class="border"><?php echo '<img src='.$row["picture"].' alt="">' ?></td>
+			<td class="border"><?php echo '<img width= 80px; height=80px; src=../img/'.$row["picture"].' alt="">' ?></td>
 			<td class="d-flex">
 				<a href="news.php?edit=<?php echo $row['news_id']; ?>" class="btn btn-info">Edit</a>
 				<a href="php_code.php?delete=<?php echo $row['news_id']; ?>" class="btn btn-danger">Delete</a>

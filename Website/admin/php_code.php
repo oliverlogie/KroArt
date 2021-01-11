@@ -32,14 +32,14 @@
 	if(isset($_GET['edit'])){
 		$id = $_GET['edit'];
 		$update = true;
-		$result= $db->query("Select * From news WHERE news_id=$id") or die ($db->error());
-		if(count($result)==1){
-			$row = $result->fetch_array();
+		$resultEdit= $db->query("Select * From news WHERE news_id=$id") or die ($db->error());
+		if(($resultEdit)==1){
+			$row = $resultEdit->fetch_assoc();
 			$headline = $row['headline'];
 			$textn = $row['textn'];
 			$daten = $row['daten'];
 			$fileName = $row['picture'];
-		
+			
 		}
 	}
 	
@@ -48,7 +48,7 @@
 		$headline = $_POST['headline'];
 		$textn = $_POST['text'];
 		$daten = $_POST['date'];
-		$fileName = $_POST['picture'];
+		$fileName = basename($_FILES["picture"]["name"]);
 
 		$db->query("Update news Set headline='$headline',textn='$textn', daten='$daten', picture='$fileName' WHERE news_id=$id") or die ($db->error());
 		header('location: news.php');

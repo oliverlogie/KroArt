@@ -68,7 +68,7 @@ $result_news = $conn->query($sql_news);
       echo '<div class="container p-5">';
       echo '<div class="row d-flex">';
       echo '<div class="col-lg-3 col-md-4 col-sm-12">';
-      echo "<img class='img_News' src='../".$row['picture']."' />";
+      echo "<img class='img_News' src='../img/".$row['picture']."' />";
       echo '</div>';
       echo '<div class="col-lg-9 col-md-8 col-sm-12 pt-5">';
       echo '<div><h4>'. $row["headline"] .'</h4></div>';

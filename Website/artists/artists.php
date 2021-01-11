@@ -11,7 +11,7 @@ $result_artist = $conn->query($sql_artist);
           $i=1;
         while($row = mysqli_fetch_array($result_artist)){
           echo '<div class="card border-0 col-lg-3 col-md-4 col-sm-6  text-left">';
-          echo '<a href="../artist_Info/artist_info.php?id=' . $row['artist_id'] . '"><img class="card-img-top" src="../'. $row["picture"] .'" alt=""></a>';
+          echo '<a href="../artist_Info/artist_info.php?id=' . $row['artist_id'] . '"><img class="card-img-top" src="../img/'. $row["picture"] .'" alt=""></a>';
           echo '<div class="card-body text-center">';
           echo '<a href="../artist_Info/artist_info.php?id=' . $row['artist_id'] . '"><h5 class="card-title">' . $row["name"] . '</h5></a>';
           echo '</div>';

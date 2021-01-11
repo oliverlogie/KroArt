@@ -18,7 +18,7 @@ echo '<h1 class="text-center">'. $row["category"].'</h1>';
   <?php
   while($row = mysqli_fetch_assoc($result_pic)){
     echo '<div class="card border col-lg-3 col-md-4 col-sm-6  text-left">';
-    echo '<a href="../artist_Info/artist_info.php?id=' . $row['artist_id'] . '"><img class="card-img-top" src="../'. $row["picture"] .'" alt=""></a>';
+    echo '<a href="../artist_Info/artist_info.php?id=' . $row['artist_id'] . '"><img class="card-img-top" src="../img/'. $row["picture"] .'" alt=""></a>';
     echo '<div class="card-body">';
     echo '<h5 class="card-title">Name: '. $row["name_pic"] .'</h5>';
     echo '</div>';

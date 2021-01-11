@@ -18,10 +18,12 @@ echo '<p>'. $rowA["ssa"] .'</p>';
 echo '<h3>Exhibitions</h3>';
 echo '<p> '.$rowA["exh"].'</p>';
 echo '<a href="" class="text-danger">Download CV</a>';
+?>
+<div class="row d-flex mt-5">
+<?php
 while($row = mysqli_fetch_assoc($result_pic)){
-echo '<div class="row d-flex mt-5">';
-echo '<div class="card border col-lg-3 col-md-4 col-sm-6">';
-echo '<img class="card-img-top" src="../'. $row["picture"] .'" alt="">';
+echo '<div class="card border col-lg-3 col-md-4 col-sm-6 mr-3">';
+echo '<img class="card-img-top mt-2" src="../img/'. $row["picture"] .'" alt="">';
 echo '<div class="card-body">';
 echo '<h5 class="card-title">Name:'. $row["name_pic"] .'</h5>';
 echo '</div>';
@@ -35,10 +37,10 @@ echo '<p class="preis  mr-3">Price:'. $row["price"] .' €</p>';
 echo '<p><button type="button" class="buttonADD">ADD</button></p>';
 echo '</div>';
 echo '</div>';
-echo '</div>';
 }
 
 ?>
+</div>
 </div>
 </main>
 <?php include_once('../includes/footer.php') ?>
