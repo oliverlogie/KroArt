@@ -1,6 +1,6 @@
 <?php include('php_code.php');?>
-<?php  include_once('../includes/navbar.php') ?>
-
+<?php  include_once('navbarAdmin.php') ?>
+<main>
 <div class="container">
 <form method="post" action="php_code.php" enctype="multipart/form-data">
 	<input type="hidden" name="id" value="<?php echo $id?>">
@@ -56,7 +56,6 @@
 </table>
 
 </form>
-
-
 </div>
+</main>
 <?php include_once('../includes/footer.php') ?>

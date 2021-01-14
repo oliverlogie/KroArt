@@ -8,7 +8,7 @@ if (!$conn) {
     exit;
 }
 
-echo "DB kroart works!" . PHP_EOL;
-echo "Host-Informationen: " . mysqli_get_host_info($conn) . PHP_EOL;
+// echo "DB kroart works!" . PHP_EOL;
+// echo "Host-Informationen: " . mysqli_get_host_info($conn) . PHP_EOL;
 
 //mysqli_close($conn);
