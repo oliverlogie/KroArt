@@ -67,14 +67,14 @@ $result_news = $conn->query($sql_news);
         while ($row = $result_news-> fetch_assoc()){
       echo '<div class="container p-5">';
       echo '<div class="row d-flex">';
-      echo '<div class="col-lg-3 col-md-4 col-sm-12">';
+      echo '<div class="col-lg-4 col-md-5 col-sm-12">';
       echo "<img class='img_News' src='../img/".$row['picture']."' />";
       echo '</div>';
-      echo '<div class="col-lg-9 col-md-8 col-sm-12 pt-5">';
+      echo '<div class="col-lg-8 col-md-7 col-sm-12 pt-5 newsDiv">';
       echo '<div><h4>'. $row["headline"] .'</h4></div>';
       echo '<div class="date">'. $row["daten"] .'</div>';
-      echo '<div class=""><p>'. $row["textn"].'</p></div>';
-      echo '<div class="button-News"><a href="../News/news.php" class=""><button>see more</button></a></div>';
+      echo '<div class="textBox"><p>'. $row["textn"].'</p></div>';
+      echo '<div class="button-News mt-3"><a href="../News/news.php"><p >SEE MORE</p></a></div>';
       echo '</div>';
       echo '</div>';
       echo '</div>';

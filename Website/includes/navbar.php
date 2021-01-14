@@ -19,7 +19,8 @@ function my_shopping_cart_total_product_count() {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact/KroArt</title>
+    <title>Kro Art Contemporary online</title>
+    <link rel="icon" type="image/gif" href="../img/logo.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../Style/style.css">
@@ -56,7 +57,7 @@ function my_shopping_cart_total_product_count() {
             <div  id="myNav" class="overlay d-sm-block justify-content-sm-between d-lg-none d-md-none">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="overlay-content">
-                    <a href="../About/about.html">About</a>
+                    <a href="../About/about.php">About</a>
                     <a href="../artists/artists.php">Artists</a>
                     <a href="../ArtCategories/art_categories.php">Categories</a>
                     <a href="../News/news.php">News</a>

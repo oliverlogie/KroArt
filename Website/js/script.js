@@ -23,7 +23,7 @@ function openNav() {
       x.style.display = "none";
     }
 
-}
+};
 
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
@@ -47,11 +47,38 @@ function closeNav() {
     } else {
       x.style.display = "none";
     }
-}
+};
 
 
 
 $('.carousel').carousel({
   interval: 4000
-})
+});
 
+
+// $(document)
+//     .on('click','#read-more',function() { 
+//         $(this).removeAttr('id', 'read-more').attr('id', 'show-less').html('SHOW LESS')
+//         $('.hideSHOW').addClass('description').removeClass('ellipsis'); 
+//     })
+
+//     .on('click','#show-less',function() { 
+//         $(this).removeAttr('id', 'show-less').attr('id', 'read-more').html('READ MORE')
+//         $('.hideSHOW').removeClass('description').addClass('ellipsis'); 
+
+//     })
+// ;
+
+$('.read-more').on('click', function(){
+  $(this).prev('div').removeClass('textBox');
+});
+
+$(document)
+.on('click','.read-more',function() { 
+  $(this).removeClass('read-more').addClass('show-less').html('Show Less')
+})
+.on('click','.show-less',function() { 
+  $(this).removeClass('show-less').addClass('read-more').html('Read More')
+  $(this).prev('div').addClass('textBox');
+
+})
