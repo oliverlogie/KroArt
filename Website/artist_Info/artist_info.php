@@ -22,7 +22,7 @@ echo '<a href="" class="text-danger">Download CV</a>';
 <div class="row d-flex mt-5">
 <?php
 while($row = mysqli_fetch_assoc($result_pic)){
-echo '<div class="card border col-lg-3 col-md-4 col-sm-6 mr-3">';
+echo '<div class="card border col-lg-3 col-md-4 col-sm-6 ">';
 echo '<img class="card-img-top mt-2" src="../img/'. $row["picture"] .'" alt="">';
 echo '<div class="card-body">';
 echo '<h5 class="card-title">Name:'. $row["name_pic"] .'</h5>';
