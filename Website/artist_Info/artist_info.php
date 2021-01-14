@@ -1,5 +1,4 @@
-<?php  
-include_once('../backend/cart.php');
+<?php 
 include_once('../includes/navbar.php');
 $id= $_GET['id'];
 $sql_pic = "SELECT * FROM ((artwork INNER JOIN artist ON artwork.fk_artist_id = artist.artist_id)INNER JOIN technic ON fk_technic = technic_id) where fk_artist_id='$id'";

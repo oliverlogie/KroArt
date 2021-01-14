@@ -1,5 +1,6 @@
 <?php
 include_once('../backend/db_connect.php');
+include_once('../backend/cart.php');
 $sql_category = "SELECT * FROM category";
 $result_category = $conn->query($sql_category);
 function my_shopping_cart_total_product_count() {

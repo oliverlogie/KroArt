@@ -1,6 +1,10 @@
 <?php
-include_once('../backend/cart.php');
-include_once('../includes/navbar.php'); ?>
+include_once('../includes/navbar.php');
+$previous = "javascript:history.go(-1)";
+if(isset($_SERVER['HTTP_REFERER'])) {
+    $previous = $_SERVER['HTTP_REFERER'];
+}
+ ?>
 <main>
   <div class="container pt-5 pb-5">
     <div class="row d-block d-lg-flex d-md-flex justify-content-center">
@@ -37,7 +41,7 @@ include_once('../includes/navbar.php'); ?>
 							$total = $total + $values["item_price"];
 						}
 					  ?>
-            <li class="list-group-item border-0 d-flex justify-content-between"><h3>Total: € <?php echo number_format($total, 2); ?></h3> <span class="text-success">Preis</span></li>
+            <li class="list-group-item border-0 d-flex justify-content-between"><h3>Total: € <?php echo number_format($total, 2); ?></h3><a href="<?= $previous ?>">back to shopping...</a></li>
             <?php
 					}
 					?>

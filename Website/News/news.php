@@ -13,7 +13,7 @@ $result_news = $conn->query($sql_news);
       echo '<div class="container p-5 mb-5">';
       echo '<div class="row d-flex">';
       echo '<div class="img_News col-lg-4 col-md-5 col-sm-12">';
-      echo "<img class='img_News' src='../img/".$row['picture']."' />";
+      echo "<img class='img_News' src='../img/". $row['picture'] ."' />";
       echo '</div>';
       echo '<div class="col-lg-8 col-md-7 col-sm-12 pt-5 ">';
       echo '<div><h4>'. $row["headline"] .'</h4></div>';
