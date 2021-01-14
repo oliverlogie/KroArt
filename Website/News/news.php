@@ -1,5 +1,5 @@
 <?php  include_once('../includes/navbar.php'); 
-$sql_news = "SELECT * FROM `news`";
+$sql_news = "SELECT * FROM `news` ORDER BY news_id DESC";
 $result_news = $conn->query($sql_news);
 ?>
 <main>
