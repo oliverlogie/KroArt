@@ -70,15 +70,15 @@ $('.carousel').carousel({
 // ;
 
 $('.read-more').on('click', function(){
-  $(this).prev('div').toggleClass('showContent');
+  $(this).prev('div').removeClass('textBox');
 });
-
 
 $(document)
 .on('click','.read-more',function() { 
   $(this).removeClass('read-more').addClass('show-less').html('Show Less')
 })
-
 .on('click','.show-less',function() { 
   $(this).removeClass('show-less').addClass('read-more').html('Read More')
+  $(this).prev('div').addClass('textBox');
+
 })

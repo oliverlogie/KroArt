@@ -245,7 +245,7 @@ iFrame{
 .carousel-img{
   width: 100%;
   max-width:100%;
-  height: 100%;
+  height: 700px;
 }
 
 .home-container h1 {
@@ -336,21 +336,6 @@ button:hover{
 
 footer{
   border-top: 2px solid #ae2b0a;
-  position: absolute;
-  width: 100%;
-  z-index: 70;
-  background-color: #fffdfb;
-  bottom:0px;
-  height:100px;
-  left:0px; 
-  right:0px; 
-  overflow:hidden;
-  padding-bottom: 30px;
-}
-@media screen and (max-width: 770px) {
-  footer {
-    height:150px;
-  }
 }
 .iconFooter img {
   max-width: 100%;
@@ -369,12 +354,7 @@ footer button:hover{
 }
 
 main{
-  position: absolute;
-  top:100px; 
-  bottom:100px; 
-  left:0px; 
-  right:0px; 
-  overflow:auto;
+
 }
 /* ----------------------------------------------------------- Footer END --------------------------------------------------------- */
 
