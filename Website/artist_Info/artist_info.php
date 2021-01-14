@@ -21,7 +21,7 @@ echo '<h3>Scolarships / Awards</h3>';
 echo '<p>'. $rowA["ssa"] .'</p>';
 echo '<h3>Exhibitions</h3>';
 echo '<p> '.$rowA["exh"].'</p>';
-echo '<a href="../pdf/' .$rowA['pdf'] .' "class="text-danger" download="newfilename">Download CV</a>';
+echo '<a href="../pdf/' .$rowA['pdf'] .' "class="text-danger" download="'.$rowA["name"].'">Download CV</a>';
 ?>
 <div class="row d-flex mt-5">
 <?php
