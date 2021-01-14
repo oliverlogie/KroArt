@@ -15,25 +15,34 @@ echo '<h1 class="text-center">'. $row["category"].'</h1>';
 <div class="row d-flex mt-5">
 
 
-  <?php
-  while($row = mysqli_fetch_assoc($result_pic)){
-    echo '<div class="card border col-lg-3 col-md-4 col-sm-6  text-left">';
-    echo '<a href="../artist_Info/artist_info.php?id=' . $row['artist_id'] . '"><img class="card-img-top" src="../img/'. $row["picture"] .'" alt=""></a>';
-    echo '<div class="card-body">';
-    echo '<h5 class="card-title">Name: '. $row["name_pic"] .'</h5>';
-    echo '</div>';
-    echo '<ul class="list-group list-group-flush">';
-    echo '<li class="list-group-item">Artist: '. $row["name"] .'</li>';
-    echo '<li class="list-group-item">Measurements: '. $row["measurement"] .'</li>';
-    echo '<li class="list-group-item">Technic: '. $row["technic"] .'</li>';
-    echo '</ul>';
-    echo '<div class="card-body d-flex justify-content-center">';
-    echo '<p class="preis  mr-3">Price:'. $row["price"] .' €</p>';
-    echo '<p><button type="button" class="buttonADD">ADD</button></p>';
-    echo '</div>';
-    echo '</div>';
-  }
-  ?>
+<?php
+if(mysqli_num_rows($result_pic) > 0)
+{
+    while($row = mysqli_fetch_array($result_pic))
+    {
+echo '<div class="card border col-lg-3 col-md-4 col-sm-6 mr-3">';
+echo '<form method="post" action="../collect/collect.php?action=add&id=' . $row["artwork_id"] . '">';
+echo '<img class="card-img-top mt-2" src="../img/'. $row["picture"] .'" alt="">';
+echo '<div class="card-body">';
+echo '<h5 class="card-title">Name:'. $row["name_pic"] .'</h5>';
+echo '</div>';
+echo '<ul class="list-group list-group-flush">';
+echo '<li class="list-group-item">Artist: '. $row["name"] .'</li>';
+echo '<li class="list-group-item">Measurements: '. $row["measurement"] .'</li>';
+echo '<li class="list-group-item">Technic: '. $row["technic"] .'</li>';
+echo '</ul>';
+echo '<div class="card-body d-flex justify-content-center">';
+echo '<p class="preis  mr-3">Price:'. $row["price"] .' €</p>';
+echo '<input type="hidden" name="hidden_name" value='. $row["name_pic"] .' />';
+echo '<input type="hidden" name="hidden_price" value='. $row["price"] .' />';
+echo '<input type="hidden" name="hidden_quantity" value= 1 />';
+echo '<p><button type="submit" name="add_to_cart" class="buttonADD" onclick="add()" value="Add to Cart">ADD</button></p>';
+echo '</div>';
+echo '</div>';
+echo '</form>';
+    }
+}
+?>
 </div>
 </div>
 </main>

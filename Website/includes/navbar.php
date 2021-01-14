@@ -2,6 +2,17 @@
 include_once('../backend/db_connect.php');
 $sql_category = "SELECT * FROM category";
 $result_category = $conn->query($sql_category);
+function my_shopping_cart_total_product_count() {
+    $product_count = 0;
+
+    if ( isset( $_SESSION['shopping_cart'] ) ) {
+        $product_count = array_sum( array_column( $_SESSION['shopping_cart'], 'item_quantity' ) );
+    } 
+
+    return $product_count;
+    var_dump($product_count);
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +49,7 @@ $result_category = $conn->query($sql_category);
                     </li>
                     <li><a href="../News/news.php"> news</a></li>
                     <li><a href="../Contact/contact.php"> contact</a></li>
-                    <li> <a href="../collect/collect.php" class="bagImg">collect<img src="../img/shopping-bag.png" class="pl-2" alt="bag" width="35px" height="25px"></a></li>
+                    <li> <a href="../collect/collect.php" class="bagImg">collect<img src="../img/shopping-bag.png" class="pl-2" alt="bag" width="35px" height="25px"><span><?php echo my_shopping_cart_total_product_count(); ?></span></a></li>
                 </ul>
             </div>
 
