@@ -41,7 +41,7 @@ if(isset($_SERVER['HTTP_REFERER'])) {
 							$total = $total + $values["item_price"];
 						}
 					  ?>
-            <li class="list-group-item border-0 d-flex justify-content-between"><h3>Total: € <?php echo number_format($total, 2); ?></h3><a href="<?= $previous ?>">back to shopping...</a></li>
+            <li class="list-group-item border-0 d-flex justify-content-between"><h3>Total: € <?php echo number_format($total, 2); ?></h3><a class="text-muted" href="<?= $previous ?>">back to shopping...</a></li>
             <?php
 					}
 					?>
