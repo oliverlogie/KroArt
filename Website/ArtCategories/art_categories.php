@@ -11,9 +11,9 @@ if(mysqli_num_rows($result_category) > 0)
 {
     while($row = mysqli_fetch_array($result_category))
     {
-echo '<div class="artCategorie col-lg-2 col-md-2 col-sm-6 mb-5 d-block ">';
-echo '<div><a href="../art_category_info/art_info.php?id=' . $row['category_id'] . '"><img class="card-img-top" src="../img/'. $row["img_categorie"] .'" alt=""></a></div>';
-echo '<div><a href="../malerei/malerei.php">'. $row["category"] .  '</a></div>';
+echo '<div class="artCategorie col-lg-2 col-md-2 col-sm-6 mb-5 justify-content-center d-block ">';
+echo '<div class="d-none d-md-flex d-lg-flex"><a href="../art_category_info/art_info.php?id=' . $row['category_id'] . '"><img class="card-img-top" src="../img/'. $row["img_categorie"] .'" alt=""></a></div>';
+echo '<div><a href=../art_category_info/art_info.php?id=' . $row['category_id'] . '">'. $row["category"] .  '</a></div>';
 echo '</div>';
     }
 }
