@@ -1,4 +1,5 @@
-<?php 
+<?php  
+include_once('../backend/cart.php');
 include_once('../includes/navbar.php');
 $id= $_GET['id'];
 $sql_pic = "SELECT * FROM ((artwork INNER JOIN artist ON artwork.fk_artist_id = artist.artist_id)INNER JOIN technic ON fk_technic = technic_id) where fk_artist_id='$id'";
@@ -20,7 +21,7 @@ echo '<h3>Scolarships / Awards</h3>';
 echo '<p>'. $rowA["ssa"] .'</p>';
 echo '<h3>Exhibitions</h3>';
 echo '<p> '.$rowA["exh"].'</p>';
-echo '<a href="../pdf/' .$rowA['pdf'] .' "class="text-danger" download="'.$rowA["name"].'">Download CV</a>';
+echo '<a href="../pdf/' .$rowA['pdf'] .' "class="text-danger" download="newfilename">Download CV</a>';
 ?>
 <div class="row d-flex mt-5">
 <?php
@@ -42,9 +43,9 @@ echo '<li class="list-group-item">Technic: '. $row["technic"] .'</li>';
 echo '</ul>';
 echo '</a>';
 echo '<div class="card-body d-flex justify-content-center">';
-echo '<p class="preis  mr-3">Price: '. $row["price"] .' €</p>';
+echo '<p class="preis  mr-3">Price:'. $row["price"] .' €</p>';
 echo '<input type="hidden" name="hidden_name" value='. $row["name_pic"] .' />';
-echo '<input type="hidden" name="hidden_price" value= '. $row["price"] .' />';
+echo '<input type="hidden" name="hidden_price" value='. $row["price"] .' />';
 echo '<input type="hidden" name="hidden_quantity" value= 1 />';
 echo '<p><button type="submit" name="add_to_cart" class="buttonADD" onclick="add()" value="Add to Cart">ADD</button></p>';
 echo '</div>';

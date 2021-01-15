@@ -34,7 +34,7 @@ echo '<li class="list-group-item">Technic: '. $row["technic"] .'</li>';
 echo '</ul>';
 echo '</a>';
 echo '<div class="card-body d-flex justify-content-center">';
-echo '<p class="preis  mr-3">Price: '. $row["price"] .' €</p>';
+echo '<p class="preis  mr-3">Price:'. $row["price"] .' €</p>';
 echo '<input type="hidden" name="hidden_name" value='. $row["name_pic"] .' />';
 echo '<input type="hidden" name="hidden_price" value='. $row["price"] .' />';
 echo '<input type="hidden" name="hidden_quantity" value= 1 />';
