@@ -31,27 +31,26 @@
 
 <?php $results = mysqli_query($db, "SELECT * FROM news"); ?>
 <table>
-	<thead>
-		<tr>
-			<th>Headline</th>
-			<th>Text</th>
-            <th>Date</th>
-			<th>Picture</th>
-			<th colspan="2" class=>Action</th>
-		</tr>
-	</thead>
+	<div class="container home-container mt-5">
+      <h1><span class="news_line">News</span></h1>
+    </div>
 	<?php while ($row = mysqli_fetch_array($results)) { ?>
-		<tr class="border">
-			<td class="border"><?php echo $row['headline']; ?></td>
-			<td class="border"><?php echo $row['textn']; ?></td>
-			<td class="border"><?php echo $row['daten']; ?></td>
-			<td class="border"><?php echo '<img width= 80px; height=80px; src=../img/'.$row["picture"].' alt="">' ?></td>
-			<td class="d-flex">
-				<a href="news.php?edit=<?php echo $row['news_id']; ?>" class="btn btn-info">Edit</a>
-				<a href="php_code.php?delete=<?php echo $row['news_id']; ?>" class="btn btn-danger">Delete</a>
-			</td>
-			
-		</tr>
+	<div class="container p-5 mb-5">
+     <div class="row d-flex">
+     <div class="img_News col-lg-4 col-md-5 col-sm-12">
+	 <?php echo '<img  class="img_News" src=../img/'.$row["picture"].' alt="">' ?>
+	 </div>
+     <div class="col-lg-8 col-md-7 col-sm-12 pt-5 ">
+     <div><h4><?php echo $row['headline']; ?></h4></div>
+     <div class="date"><?php echo $row['daten']; ?></div>
+     <div class="textBox"><p><?php echo $row['textn']; ?></p></div>
+     <p class="read-more button-News mt-3">READ MORE</p></div>
+	 <a href="news.php?edit=<?php echo $row['news_id']; ?>" class="btn btn-info ml-3">Edit</a>
+	 <a href="php_code.php?delete=<?php echo $row['news_id']; ?>" class="btn btn-danger">Delete</a>
+     </div>
+     </div>
+     </div>
+
 	<?php } ?>
 </table>
 

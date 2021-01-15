@@ -14,7 +14,6 @@ $result_news = $conn->query($sql_news);
           <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -22,9 +21,6 @@ $result_news = $conn->query($sql_news);
           </div>
           <div class="carousel-item">
             <img class="carousel-img d-block" src="../img/c_pic2.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="carousel-img d-block" src="../img/c_pic1.JPG" alt="Third slide">
           </div>
           <div class="carousel-item">
             <img class="carousel-img d-block" src="../img/c_pic4.JPG" alt="Fourth slide">
