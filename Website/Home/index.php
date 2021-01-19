@@ -56,7 +56,7 @@ $result_news = $conn->query($sql_news);
 
     <?php
       echo '<div class="container home-container  pt-5 mt-5">';
-      echo '<h1><span class="news_line">Last news</span></h1>';
+      echo '<h1><span class="news_line">Lastest news</span></h1>';
       echo '</div>';
       echo '';
       if ($result_news-> num_rows > 0){

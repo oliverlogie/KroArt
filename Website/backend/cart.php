@@ -13,8 +13,12 @@ if(isset($_POST["add_to_cart"]))
 			$item_array = array(
 				'item_id'			=>	$_GET["id"],
 				'item_name'			=>	$_POST["hidden_name"],
+				'item_lastname'     => $_POST["hidden_lastname"],
+				'item_pic'     		=> $_POST["hidden_name_pic"],
+				'item_measurement'  => $_POST["hidden_measurement"],
                 'item_price'		=>	$_POST["hidden_price"],
-                'item_quantity'     => $_POST["hidden_quantity"],
+				'item_technic'     	=> $_POST["hidden_technic"],
+				'item_quantity'     => $_POST["hidden_quantity"],
 
 			);
 			$_SESSION["shopping_cart"][$count] = $item_array;
@@ -27,10 +31,14 @@ if(isset($_POST["add_to_cart"]))
 	else
 	{
 		$item_array = array(
-				'item_id'			=>	$_GET["id"],
-				'item_name'		    =>	$_POST["hidden_name"],
-                'item_price'		=>	$_POST["hidden_price"],
-                'item_quantity'     => $_POST["hidden_quantity"],
+			'item_id'			=>	$_GET["id"],
+			'item_name'			=>	$_POST["hidden_name"],
+			'item_lastname'     => $_POST["hidden_lastname"],
+			'item_pic'     		=> $_POST["hidden_name_pic"],
+			'item_measurement'  => $_POST["hidden_measurement"],
+			'item_price'		=>	$_POST["hidden_price"],
+			'item_technic'     	=> $_POST["hidden_technic"],
+			'item_quantity'     => $_POST["hidden_quantity"],
 		);
 		$_SESSION["shopping_cart"][0] = $item_array;
 	}

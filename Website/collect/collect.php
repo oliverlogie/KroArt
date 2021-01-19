@@ -34,14 +34,20 @@ if(isset($_SERVER['HTTP_REFERER'])) {
 						foreach($_SESSION["shopping_cart"] as $keys => $values)
 						{
 					?>
-            <li class="list-group-item border-0 d-flex justify-content-between"><h5><?php echo $values["item_name"];?></h5>
-            <span class="text-success">Preis: € <?php echo $values["item_price"]; ?></span>
+            <li class="list-group-item border-2 d-flex justify-content-between mb-2">
+            <ul class="p-0">
+            <li><h5>Artist: <?php echo $values["item_name"];?> <?php echo $values["item_lastname"];?></h5></li>
+            <li><h5>Picture: <?php echo $values["item_pic"];?></h5></li>
+            <li><h5>Measurements :<?php echo $values["item_measurement"];?></h5></li>
+            <li><h5>Technic: <?php echo $values["item_technic"];?></h5></li>
+            </ul>
+            <span class="text-primary">Preis: € <?php echo $values["item_price"]; ?></span>
             <button><a href="collect.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger remove">Remove</span></a></button>
             <?php
 							$total = $total + $values["item_price"];
 						}
 					  ?>
-            <li class="list-group-item border-0 d-flex justify-content-between"><h3>Total: € <?php echo number_format($total, 2); ?></h3><a class="text-muted" href="<?= $previous ?>">back to shopping...</a></li>
+            <li class="list-group-item border-0 d-flex justify-content-between"><h3>Total: € <?php echo number_format($total, 2); ?></h3><a class="text-muted" href="<?= $previous ?>">previous page...</a></li>
             <?php
 					}
 					?>

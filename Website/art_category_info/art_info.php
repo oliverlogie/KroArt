@@ -1,6 +1,6 @@
 <?php  include_once('../includes/navbar.php');
 $id= $_GET['id'];
-$sql_pic = "SELECT * FROM (((category INNER JOIN artwork ON artwork.fk_category = category.category_id) INNER JOIN artist ON artist.artist_id = artwork.fk_artist_id) INNER JOIN technic ON fk_technic = technic_id) where category_id='$id'";
+$sql_pic = "SELECT * FROM (((category INNER JOIN artwork ON artwork.fk_category = category.category_id) INNER JOIN artist ON artist.artist_id = artwork.fk_artist_id) INNER JOIN technic ON fk_technic = technic_id) where category_id='$id' ORDER BY lastname";
 $sql_category = "SELECT * FROM category where category_id='$id'";
 $result_pic = $conn->query($sql_pic);
 $result_category = $conn->query($sql_category);
@@ -28,15 +28,25 @@ echo '<div class="card-body">';
 echo '<h5 class="card-title">'. $row["name_pic"] .'</h5>';
 echo '</div>';
 echo '<ul class="list-group list-group-flush">';
+<<<<<<< HEAD
 echo '<li class="list-group-item"><a href="../artist_Info/artist_info.php?id=' . $row['artist_id'] . '"> '. $row["name"] .'</a></li>';
 echo '<li class="list-group-item">'. $row["measurement"] .'</li>';
 echo '<li class="list-group-item">'. $row["technic"] .'</li>';
+=======
+echo '<li class="list-group-item">Artist:<a href="../artist_Info/artist_info.php?id=' . $row['artist_id'] . '"> '. $row["name"] .' ' . $row["lastname"] . '</a></li>';
+echo '<li class="list-group-item">Measurements: '. $row["measurement"] .'</li>';
+echo '<li class="list-group-item">Technic: '. $row["technic"] .'</li>';
+>>>>>>> 096a9cd4f02d5b034307d85f0e7d1d2a4aec5fa1
 echo '</ul>';
 echo '</a>';
 echo '<div class="card-body d-flex justify-content-center">';
 echo '<p class="preis  mr-3">Price: '. $row["price"] .' €</p>';
-echo '<input type="hidden" name="hidden_name" value='. $row["name_pic"] .' />';
+echo '<input type="hidden" name="hidden_name" value='. $row["name"] .' />';
+echo '<input type="hidden" name="hidden_lastname" value='. $row["lastname"] .' />';
+echo '<input type="hidden" name="hidden_name_pic" value='. $row["name_pic"] .' />';
 echo '<input type="hidden" name="hidden_price" value='. $row["price"] .' />';
+echo '<input type="hidden" name="hidden_measurement" value='. $row["measurement"] .' />';
+echo '<input type="hidden" name="hidden_technic" value='. $row["technic"] .' />';
 echo '<input type="hidden" name="hidden_quantity" value= 1 />';
 echo '<p><button type="submit" name="add_to_cart" class="buttonADD" onclick="add()" value="Add to Cart">ADD</button></p>';
 echo '</div>';
