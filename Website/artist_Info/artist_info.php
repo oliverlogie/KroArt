@@ -12,7 +12,7 @@ $result = mysqli_query($conn, $query);
 <div class="container pt-5 pb-5 mt-5">
 <?php
 $rowA = mysqli_fetch_assoc($result_artist);
-echo '<h1 class="text-center pb-3"> '. $rowA["name"] .' </h1>';
+echo '<h1 class="text-center pb-3"> '. $rowA["name"] .' ' . $rowA["lastname"] . '</h1>';
 echo '<h5 class="text-right"><a href="../artists/artists.php">back to Artists</a></h5>';
 echo '<h3>Biography</h3>';
 echo '<p> '. $rowA["bio"] .'</p>';
@@ -36,7 +36,7 @@ echo '<div class="card-body">';
 echo '<h5 class="card-title">'. $row["name_pic"] .'</h5>';
 echo '</div>';
 echo '<ul class="list-group list-group-flush">';
-echo '<li class="list-group-item">Artist: '. $row["name"] .'</li>';
+echo '<li class="list-group-item">Artist: '. $row["name"] .' '. $row["lastname"] . '</li>';
 echo '<li class="list-group-item">Measurements: '. $row["measurement"] .'</li>';
 echo '<li class="list-group-item">Technic: '. $row["technic"] .'</li>';
 echo '</ul>';

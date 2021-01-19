@@ -20,7 +20,7 @@ if(isset($_SERVER['HTTP_REFERER'])) {
       echo '<div class="border-0 col-lg-6 col-md-6 col-sm-12  productCard">';
       echo '<ul class="border-0">';
       echo '<li class="list-group-item border-0"><h3>Name: '. $row["name_pic"] .'</h3></li>';
-      echo '<li class="list-group-item border-0">Artist:<a href="../artist_Info/artist_info.php?id=' . $row['artist_id'] . '"> <h4 class="artName"">'. $row["name"] .'</h4></a></li>';
+      echo '<li class="list-group-item border-0">Artist:<a href="../artist_Info/artist_info.php?id=' . $row['artist_id'] . '"> <h4 class="artName"">'. $row["name"] .' '. $row["lastname"] . '</h4></a></li>';
       echo '<li class="list-group-item border-0"><h5>Measurements: '. $row["measurement"] .'</h5></li>';
       echo '<li class="list-group-item border-0"><h5>Technic: '. $row["technic"] .'</h5></li>';
       echo '<li class="list-group-item border-0" ><h3 class="preis">Price: '. $row["price"] .' €</h3></li>';
