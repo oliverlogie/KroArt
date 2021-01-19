@@ -9,7 +9,7 @@
       <div class="col-lg-3 col-md-3 col-sm-12 ">
         <ul>
           <li><a href="">Impressum</a></li>
-          <li><a href="">Datenschutz</a></li>
+          <li><a href="">Datenshutz</a></li>
         </ul>
       </div>
       <div class="col-lg-3 ">
