@@ -24,8 +24,12 @@ if(isset($_SERVER['HTTP_REFERER'])) {
       echo '<li class="list-group-item border-0"><h5>Measurements: '. $row["measurement"] .'</h5></li>';
       echo '<li class="list-group-item border-0"><h5>Technic: '. $row["technic"] .'</h5></li>';
       echo '<li class="list-group-item border-0" ><h3 class="preis">Price: '. $row["price"] .' €</h3></li>';
-      echo '<input type="hidden" name="hidden_name" value='. $row["name_pic"] .' />';
+      echo '<input type="hidden" name="hidden_name" value='. $row["name"] .' />';
+      echo '<input type="hidden" name="hidden_lastname" value='. $row["lastname"] .' />';
+      echo '<input type="hidden" name="hidden_name_pic" value='. $row["name_pic"] .' />';
       echo '<input type="hidden" name="hidden_price" value='. $row["price"] .' />';
+      echo '<input type="hidden" name="hidden_measurement" value='. $row["measurement"] .' />';
+      echo '<input type="hidden" name="hidden_technic" value='. $row["technic"] .' />';
       echo '<input type="hidden" name="hidden_quantity" value= 1 />';
       echo '<li class="list-group-item border-0 mt-5"><button type="submit" name="add_to_cart" class="productADD" onclick="add()" value="Add to Cart">ADD</button></li>';
       echo '</ul>';
