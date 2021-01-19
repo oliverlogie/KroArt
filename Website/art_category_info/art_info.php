@@ -28,19 +28,13 @@ echo '<div class="card-body">';
 echo '<h5 class="card-title">'. $row["name_pic"] .'</h5>';
 echo '</div>';
 echo '<ul class="list-group list-group-flush">';
-<<<<<<< HEAD
-echo '<li class="list-group-item"><a href="../artist_Info/artist_info.php?id=' . $row['artist_id'] . '"> '. $row["name"] .'</a></li>';
+echo '<li class="list-group-item"><a href="../artist_Info/artist_info.php?id=' . $row['artist_id'] . '"> '. $row["name"] .' ' . $row["lastname"] . '</a></li>';
 echo '<li class="list-group-item">'. $row["measurement"] .'</li>';
 echo '<li class="list-group-item">'. $row["technic"] .'</li>';
-=======
-echo '<li class="list-group-item">Artist:<a href="../artist_Info/artist_info.php?id=' . $row['artist_id'] . '"> '. $row["name"] .' ' . $row["lastname"] . '</a></li>';
-echo '<li class="list-group-item">Measurements: '. $row["measurement"] .'</li>';
-echo '<li class="list-group-item">Technic: '. $row["technic"] .'</li>';
->>>>>>> 096a9cd4f02d5b034307d85f0e7d1d2a4aec5fa1
 echo '</ul>';
 echo '</a>';
 echo '<div class="card-body d-flex justify-content-center">';
-echo '<p class="preis  mr-3">Price: '. $row["price"] .' €</p>';
+echo '<p class="preis  mr-3">'. $row["price"] .' €</p>';
 echo '<input type="hidden" name="hidden_name" value='. $row["name"] .' />';
 echo '<input type="hidden" name="hidden_lastname" value='. $row["lastname"] .' />';
 echo '<input type="hidden" name="hidden_name_pic" value='. $row["name_pic"] .' />';

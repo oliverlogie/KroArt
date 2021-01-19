@@ -36,10 +36,10 @@ if(isset($_SERVER['HTTP_REFERER'])) {
 					?>
             <li class="list-group-item border-2 d-flex justify-content-between mb-2">
             <ul class="p-0">
-            <li><h5>Artist: <?php echo $values["item_name"];?> <?php echo $values["item_lastname"];?></h5></li>
-            <li><h5>Picture: <?php echo $values["item_pic"];?></h5></li>
-            <li><h5>Measurements :<?php echo $values["item_measurement"];?></h5></li>
-            <li><h5>Technic: <?php echo $values["item_technic"];?></h5></li>
+            <li><?php echo $values["item_pic"];?></li>
+            <li><?php echo $values["item_name"];?> <?php echo $values["item_lastname"];?></li>
+            <li><?php echo $values["item_measurement"];?></li>
+            <li><?php echo $values["item_technic"];?></li>
             </ul>
             <span class="text-primary">Preis: € <?php echo $values["item_price"]; ?></span>
             <button><a href="collect.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger remove">Remove</span></a></button>

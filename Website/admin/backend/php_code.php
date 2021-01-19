@@ -63,6 +63,7 @@
 $artist_id=0;
 $updateArtist="";
 $artistName="";
+$artistLastName="";
 $biography ="";
 $awards ="";
 $exhibitions ="";
@@ -73,13 +74,14 @@ $pdfFileType = pathinfo($pdfTargetFilePath,PATHINFO_EXTENSION);
 
 if (isset($_POST['saveArtist'])) {
 	$artistName = $_POST['artistName'];
+	$artistLastName = $_POST['artistLastName'];
 	$biography = $_POST['biography'];
 	$awards = $_POST['awards'];
 	$exhibitions = $_POST['exhibitions'];
 	$pdfFile = basename($_FILES["pdf"]["name"]);
 
-	$sqlA = "Insert into artist (name,exh,ssa,bio,pdf)
-		Values('$artistName','$exhibitions','$awards','$biography','$pdfFile')";
+	$sqlA = "Insert into artist (name,lastname,exh,ssa,bio,pdf)
+		Values('$artistName','$artistLastName','$exhibitions','$awards','$biography','$pdfFile')";
 	$resultArtist = mysqli_query($db,$sqlA);
 	header('location:../artist/artist.php');
 
@@ -98,6 +100,7 @@ if(isset($_GET['editArtist'])){
 	if(($resultEditArtist)==1){
 		$row = $resultEditArtist->fetch_assoc();
 		$artistName = $row['name'];
+		$artistLastName = $row['lastname'];
 		$biography = $row['bio'];
 		$awards = $row['ssa'];
 		$exhibitions = $row['exh'];
@@ -109,12 +112,13 @@ if(isset($_GET['editArtist'])){
 if(isset($_POST['updateArtist'])){
 	$artist_id=$_POST['artist_id'];
 	$artistName = $_POST['artistName'];
+	$artistLastName = $_POST['artistLastName'];
 	$biography = $_POST['biography'];
 	$awards = $_POST['awards'];
 	$exhibitions = $_POST['exhibitions'];
 	$pdfFile = basename($_FILES["pdfFile"]["name"]);
 
-	$db->query("Update artist Set name='$artistName',exh='$exhibitions', ssa='$awards', bio='$biography' ,pdf='$pdfFile' WHERE artist_id=$artist_id") or die ($db->error());
+	$db->query("Update artist Set name='$artistName',lastname='$artistLastName',exh='$exhibitions', ssa='$awards', bio='$biography' ,pdf='$pdfFile' WHERE artist_id=$artist_id") or die ($db->error());
 
 	header('location:../artist/artist.php');
 

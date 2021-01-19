@@ -19,23 +19,14 @@ if(isset($_SERVER['HTTP_REFERER'])) {
       echo '</div>';
       echo '<div class="border-0 col-lg-6 col-md-6 col-sm-12  productCard">';
       echo '<ul class="border-0">';
-<<<<<<< HEAD
-      echo '<li class="list-group-item border-0"><h3>'. $row["name_pic"] .'</h3></li>';
-      echo '<li class="list-group-item border-0"><a href="../artist_Info/artist_info.php?id=' . $row['artist_id'] . '"> <h4 class="artName"">'. $row["name"] .'</h4></a></li>';
+      echo '<li class="list-group-item border-0"><h3>Name: '. $row["name_pic"] .'</h3></li>';
+      echo '<li class="list-group-item border-0">Artist:<a href="../artist_Info/artist_info.php?id=' . $row['artist_id'] . '"> <h4 class="artName"">'. $row["name"] .' '. $row["lastname"] . '</h4></a></li>';
       echo '<li class="list-group-item border-0"><h5>'. $row["measurement"] .'</h5></li>';
       echo '<li class="list-group-item border-0"><h5>'. $row["technic"] .'</h5></li>';
       echo '<li class="list-group-item border-0" ><h3 class="preis">'. $row["price"] .' €</h3></li>';
-      echo '<input type="hidden" name="hidden_name" value='. $row["name_pic"] .' />';
-=======
-      echo '<li class="list-group-item border-0"><h3>Name: '. $row["name_pic"] .'</h3></li>';
-      echo '<li class="list-group-item border-0">Artist:<a href="../artist_Info/artist_info.php?id=' . $row['artist_id'] . '"> <h4 class="artName"">'. $row["name"] .' '. $row["lastname"] . '</h4></a></li>';
-      echo '<li class="list-group-item border-0"><h5>Measurements: '. $row["measurement"] .'</h5></li>';
-      echo '<li class="list-group-item border-0"><h5>Technic: '. $row["technic"] .'</h5></li>';
-      echo '<li class="list-group-item border-0" ><h3 class="preis">Price: '. $row["price"] .' €</h3></li>';
       echo '<input type="hidden" name="hidden_name" value='. $row["name"] .' />';
       echo '<input type="hidden" name="hidden_lastname" value='. $row["lastname"] .' />';
       echo '<input type="hidden" name="hidden_name_pic" value='. $row["name_pic"] .' />';
->>>>>>> 096a9cd4f02d5b034307d85f0e7d1d2a4aec5fa1
       echo '<input type="hidden" name="hidden_price" value='. $row["price"] .' />';
       echo '<input type="hidden" name="hidden_measurement" value='. $row["measurement"] .' />';
       echo '<input type="hidden" name="hidden_technic" value='. $row["technic"] .' />';

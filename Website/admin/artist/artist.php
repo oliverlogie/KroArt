@@ -5,8 +5,12 @@
         <form method="post" action="../backend/php_code.php" enctype="multipart/form-data">
             <input type="hidden" name="artist_id" value="<?php echo $artist_id?>">
             <div class="input-group">
-                <label>Artist Name</label>
+                <label>Artist First Name</label>
                 <input type="text" name="artistName" value="<?php echo $artistName ?>">
+            </div>
+            <div class="input-group">
+                <label>Artist Last Name</label>
+                <input type="text" name="artistLastName" value="<?php echo $artistLastName ?>">
             </div>
             <div class="input-group">
                 <label>Biography</label>
@@ -46,7 +50,7 @@
                     </div>
                     
                     <div class="textBox">
-                        <h1 class="text-center pb-3"><?php echo $row['name']; ?></h1>
+                        <h1 class="text-center pb-3"><?php echo $row['name']; ?>  <?php echo $row['lastname']; ?></h1>
                         <p></p>
                         <h3>Biography</h3>
                         <p><?php echo $row['bio']?></p>

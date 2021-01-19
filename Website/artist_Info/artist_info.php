@@ -36,31 +36,19 @@ echo '<div class="card-body">';
 echo '<h5 class="card-title">'. $row["name_pic"] .'</h5>';
 echo '</div>';
 echo '<ul class="list-group list-group-flush">';
-<<<<<<< HEAD
-echo '<li class="list-group-item">'. $row["name"] .'</li>';
+echo '<li class="list-group-item">'. $row["name"] .' '. $row["lastname"] . '</li>';
 echo '<li class="list-group-item">'. $row["measurement"] .'</li>';
 echo '<li class="list-group-item">'. $row["technic"] .'</li>';
 echo '</ul>';
 echo '</a>';
 echo '<div class="card-body d-flex justify-content-center">';
 echo '<p class="preis  mr-3">'. $row["price"] .' €</p>';
-echo '<input type="hidden" name="hidden_name" value='. $row["name_pic"] .' />';
-echo '<input type="hidden" name="hidden_price" value= '. $row["price"] .' />';
-=======
-echo '<li class="list-group-item">Artist: '. $row["name"] .' '. $row["lastname"] . '</li>';
-echo '<li class="list-group-item">Measurements: '. $row["measurement"] .'</li>';
-echo '<li class="list-group-item">Technic: '. $row["technic"] .'</li>';
-echo '</ul>';
-echo '</a>';
-echo '<div class="card-body d-flex justify-content-center">';
-echo '<p class="preis  mr-3">Price: '. $row["price"] .' €</p>';
 echo '<input type="hidden" name="hidden_name" value='. $row["name"] .' />';
 echo '<input type="hidden" name="hidden_lastname" value='. $row["lastname"] .' />';
 echo '<input type="hidden" name="hidden_name_pic" value='. $row["name_pic"] .' />';
 echo '<input type="hidden" name="hidden_price" value='. $row["price"] .' />';
 echo '<input type="hidden" name="hidden_measurement" value='. $row["measurement"] .' />';
 echo '<input type="hidden" name="hidden_technic" value='. $row["technic"] .' />';
->>>>>>> 096a9cd4f02d5b034307d85f0e7d1d2a4aec5fa1
 echo '<input type="hidden" name="hidden_quantity" value= 1 />';
 echo '<p><button type="submit" name="add_to_cart" class="buttonADD" onclick="add()" value="Add to Cart">ADD</button></p>';
 echo '</div>';
