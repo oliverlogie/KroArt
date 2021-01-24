@@ -24,9 +24,11 @@ $result_category = $conn->query($sql_category);
             
             <div class="row d-lg-flex d-md-flex d-none pt-3">
                 <ul class="d-flex pl-0 ml-0">
+                    <li><a href="../about/about.php"> redact about</a></li>
                     <li><a href="../artist/artist.php"> add artist</a></li>
                     <li><a href="../product/product.php">add product</a></li>
                     <li><a href="../news/news.php"> add news</a></li>
+                    <li><a href="../contact/contact.php"> redact contact</a></li>
                   
                 </ul>
             </div>

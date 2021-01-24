@@ -14,12 +14,12 @@ $result = mysqli_query($conn, $query);
 $rowA = mysqli_fetch_assoc($result_artist);
 echo '<h1 class="text-center pb-3"> '. $rowA["name"] .' ' . $rowA["lastname"] . '</h1>';
 echo '<h5 class="text-right"><a href="../artists/artists.php">back to Artists</a></h5>';
-echo '<h3>Biography</h3>';
-echo '<p> '. $rowA["bio"] .'</p>';
+echo '<h3 >Biography</h3>';
+echo '<p class="bio"> '. $rowA["bio"] .'</p>';
 echo '<h3>Scolarships / Awards</h3>';
-echo '<p>'. $rowA["ssa"] .'</p>';
+echo '<p id="ssa">'. $rowA["ssa"] .'</p>';
 echo '<h3>Exhibitions</h3>';
-echo '<p> '.$rowA["exh"].'</p>';
+echo '<p class="exh"> '.$rowA["exh"].'</p>';
 echo '<a href="../pdf/' .$rowA['pdf'] .' "class="text-danger" download="'.$rowA["name"].'">Download CV</a>';
 ?>
 <div class="row d-flex mt-5">
