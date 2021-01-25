@@ -32,13 +32,13 @@
             </div> 
             <div class="input-group">
                 <label>Artist</label>
-                <select id="fk_artist_id" name="fk_artist_id" >
+                <select id="fk_artist_id" name="" >
                     <?php echo $option; ?>
                 </select>
             </div>
             <div class="input-group">
                 <label>Category</label>
-                <select id="fk_category" name="fk_category" >
+                <select id="fk_category" name="" >
                     <?php echo $optionCategory; ?>
                 </select>
             </div>     
@@ -48,7 +48,7 @@
             </div> 
             <div class="input-group">
                 <label>Technic</label>
-                <select id="artwork" name="artwork" >
+                <select id="artwork" name="" >
                     <?php echo $optionTechnic; ?>
                 </select>
             </div>
@@ -65,10 +65,10 @@
                 <input type="file" name="pictureProduct" value="<?php echo '../img/' . $productFile ?>">
             </div>
             <div class="input-group">
-                <?php if($updateProduct == true){
-                echo '<input class="btn btn-info" type="submit" name="updateProduct" value="update">'; 
+                <?php if($updateArtwork == true){
+                echo '<input class="btn btn-info" type="submit" name="updateArtwork" value="update">'; 
                 } else {
-                echo '<input class="btn btn-primary" type="submit" name="saveProduct" value="save">';
+                echo '<input class="btn btn-primary" type="submit" name="saveArtwork" value="save">';
                 }?>
             </div>
             <?php 
@@ -79,7 +79,7 @@
             </div>
 
             <div class="row d-flex  ">
-                    <?php $results = mysqli_query($db, "SELECT * FROM artwork"); 
+                    <?php $results = mysqli_query($db, "SELECT * FROM artwork "); 
                     while ($row = mysqli_fetch_array($results)) {
                         echo '<div class="card border col-lg-3 col-md-4 col-sm-6 mb-5">';
                         echo' <div class="text-right">
@@ -94,21 +94,14 @@
                         echo '<li class="list-group-item">'. $row["fk_artist_id"] . '</a></li>';
                         echo '<li class="list-group-item">'. $row["measurement"] .'</li>';
                         echo '<li class="list-group-item">'. $row["fk_technic"] .'</li>';
+                        echo '<li class="list-group-item">'. $row["fk_category"] .'</li>';
                         echo '</ul>';
                         echo '<p class="preis text-center">'. $row["price"] .' €</p>'; 
                         echo '</div>';
                     }
-                        ?>
-                      
+                        ?> 
             </div>
-                    
-        
         </form>
     </div>
-
-
-
-
-
 </main>
 <?php include_once('../includes/footerAdmin.php') ?>

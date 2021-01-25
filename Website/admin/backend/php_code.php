@@ -139,13 +139,13 @@ $measurement = "";
 $fk_technic = "";
 $price = 0;
 $artwork_id=0;
-$updateProduct="";
+$updateArtwork="";
 $productFile="";
 $productTargetDir = "../../img";
 $productTargetFilePath = $productTargetDir . $productFile;
 $productFileType = pathinfo($productTargetFilePath,PATHINFO_EXTENSION);
 
-if (isset($_POST['saveProduct'])) {
+if (isset($_POST['saveArtwork'])) {
 	$name_pic = $_POST['name_pic'];
 	$fk_artist_id = $_POST['fk_artist_id'];
 	$fk_category = $_POST['fk_category'];
@@ -154,7 +154,8 @@ if (isset($_POST['saveProduct'])) {
 	$price = $_POST['price'];
 	$pictureProduct = basename($_FILES["pictureProduct"]["name"]);
 
-	$sqlP = "Insert into artwork(name_pic, picture, price, measurement, fk_category, fk_technic, fk_artist_id) VALUES ('$name_pic','$pictureProduct','$price,$measurement','$fk_category','$fk_technic','$fk_artist_id')";
+	$sqlP = "Insert into artwork(name_pic, picture, price, measurement, fk_category, fk_technic, fk_artist_id) VALUES  ('$name_pic','$pictureProduct','$price','$measurement','$fk_category','$fk_technic','$fk_artist_id')"or die ($db->error());
+	$result = mysqli_query($db,$sqlP);
 	header('location:../product/product.php');
 
 };
@@ -168,7 +169,7 @@ if(isset($_GET['deleteArtwork'])){
 if(isset($_GET['editArtwork'])){
 	$artwork_id = $_GET['editArtwork'];
 	$updateArtwork = true;
-	$result= $db->query("SELECT * From artwork WHERE artwork_id=$artwork_id") or die ($db->error());
+	$result= $db->query("Select * artwork WHERE artwork_id=$artwork_id") or die ($db->error());
 	if(($result)==1){
 		$row = $result->fetch_assoc();
 		$name_pic = $row['name_pic'];

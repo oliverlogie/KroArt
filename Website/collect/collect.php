@@ -9,19 +9,25 @@ if(isset($_SERVER['HTTP_REFERER'])) {
   <div class="container pt-5 pb-5">
     <div class="row d-block d-lg-flex d-md-flex justify-content-center">
       <div class="col-lg-6 col-md-6 col-sm-12">
-        <form action="">
+
+        <form action="../backend/mail.php" method="post">
+
           <p><label for="name">Full Name:<span>*</span></label>
           <input id="name" type="text" name="name" required/></p>
+
           <p><label for="email">Email Address:<span>*</span></label>
           <input id="email" type="email" name="email" required/></p>
-          <p><label for="phone">Phone:<span>*</span></label>
-          <input id="phone" type="number" placeholder="(XXX) XXX-XXXX"  name="phone" required/></p>
-          <p><label for="country">Country:<span>*</span></label>
-            <input id="country" type="text" name="country" required/></p>
-            <p><label for="City / Province">City / Province:<span>*</span></label>
-              <input id="City / Province" type="text" name="City / Province" required/></p>
-          <p>Message:<textarea id="" name="" rows="5" cols="50"></textarea></p>
-        </form>
+
+          <p><label for="phone">Phone:</label>
+          <input id="phone" type="number" placeholder="(XXX) XXX-XXXX"  name="phone" /></p>
+
+          <p><label for="country">Country:</label>
+            <input id="country" type="text" name="country" /></p>
+
+            <p><label for="City / Province">City / Province:</label>
+              <input id="City / Province" type="text" name="city" /></p>
+
+          <p>Message:<textarea id="" name="message" rows="5" cols="50"></textarea></p>
       </div>
       
         <div class="border-0 col-lg-6 col-md-6 col-sm-12  productCard">
@@ -51,9 +57,11 @@ if(isset($_SERVER['HTTP_REFERER'])) {
             <?php
 					}
 					?>
-            <li class="list-group-item border-0 mt-5"><button class="productADD">Send request</button></li>
+            <li class="list-group-item border-0 mt-5"><input class="productADD" type="submit" value="SEND REQUEST"></input></li>
           </ul>
         </div>
+        </form>
+
     </div>
   </div>
 </main>
