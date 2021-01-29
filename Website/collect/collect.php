@@ -10,13 +10,11 @@ if(isset($_SERVER['HTTP_REFERER'])) {
     <div class="row d-block d-lg-flex d-md-flex justify-content-center">
       <div class="col-lg-6 col-md-6 col-sm-12">
 
-        <form action="../backend/mail.php" method="post">
-
           <p><label for="name">Full Name:<span>*</span></label>
-          <input id="name" type="text" name="name" required/></p>
+          <input id="name" type="text" name="name" /></p>
 
           <p><label for="email">Email Address:<span>*</span></label>
-          <input id="email" type="email" name="email" required/></p>
+          <input id="email" type="email" name="email" /></p>
 
           <p><label for="phone">Phone:</label>
           <input id="phone" type="number" placeholder="(XXX) XXX-XXXX"  name="phone" /></p>
@@ -60,7 +58,6 @@ if(isset($_SERVER['HTTP_REFERER'])) {
             <li class="list-group-item border-0 mt-5"><input class="productADD" type="submit" value="SEND REQUEST"></input></li>
           </ul>
         </div>
-        </form>
 
     </div>
   </div>

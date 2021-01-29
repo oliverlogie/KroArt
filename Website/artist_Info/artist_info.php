@@ -29,7 +29,7 @@ if(mysqli_num_rows($result_pic) > 0)
     while($row = mysqli_fetch_array($result_pic))
     {
 echo '<div class="card border col-lg-3 col-md-4 col-sm-6 ">';
-echo '<form method="post" action="../collect/collect.php?action=add&id=' . $row["artwork_id"] . '">';
+echo '<form method="post" action="../artist_Info/artist_info.php?action=add&id=' . $row["fk_artist_id"] . '">';
 echo '<a href="../product_info/product_info.php?id=' . $row['artwork_id'] . '">';
 echo '<img class="card-img-top mt-2" src="../img/'. $row["picture"] .'" alt="">';
 echo '<div class="card-body">';
