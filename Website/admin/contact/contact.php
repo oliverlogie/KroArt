@@ -1,6 +1,5 @@
 <?php include('../backend/php_code.php');?>
 <?php  include_once('../includes/navbarAdmin.php') ?>
-
 <main>
 
 
@@ -34,7 +33,7 @@
         </div>
         <div class="row d-block d-lg-flex text-center ">';
         echo '<div class="col-sm-12 col-md-12 col-lg-7 m-0 p-0 pb-5 pt-5 text-center ">';
-        echo '<img src="../img/'.$row['img_contact'].'" class="img_contact" alt="Artwork Cowork Space">
+        echo '<img src="../../img/'.$row['img_contact'].'" class="img_contact" alt="Artwork Cowork Space">
             </div>';
         echo '<div class="col-sm-12 col-md-12 col-lg-5 d-block m-0 p-0 pt-5 pb-5 text-center">
          <p>'.$row['info'].'</p>

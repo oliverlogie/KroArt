@@ -1,5 +1,6 @@
 <?php include('../backend/php_code.php');?>
 <?php  include_once('../includes/navbarAdmin.php') ?>
+
 <?php  
     $results = mysqli_query($db, "SELECT * FROM artist"); 
     $option="";
