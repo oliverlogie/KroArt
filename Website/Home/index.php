@@ -56,13 +56,13 @@ $result_news = $conn->query($sql_news);
     </div>
 
     <?php
-      echo '<div class="container home-container  pt-5 mt-5">';
+      echo '<div class="container home-container  pt-5 mt-5 ">';
       echo '<h1><span class="news_line">Lastest news</span></h1>';
       echo '</div>';
       echo '';
       if ($result_news-> num_rows > 0){
         while ($row = $result_news-> fetch_assoc()){
-      echo '<div class="container p-5">';
+      echo '<div class="container p-5 mb-5">';
       echo '<div class="row d-flex">';
       echo '<div class="col-lg-4 col-md-5 col-sm-12">';
       echo "<img class='img_News_Home' src='../img/".$row['picture']."' />";

@@ -29,6 +29,7 @@ if(isset($_SERVER['HTTP_REFERER'])) {
 
           <p>Message:<textarea id="" name="message" rows="5" cols="50"></textarea></p>
       </div>
+      </form>
       
         <div class="border-0 col-lg-6 col-md-6 col-sm-12  productCard">
           <ul class="border-0">
@@ -57,10 +58,9 @@ if(isset($_SERVER['HTTP_REFERER'])) {
             <?php
 					}
 					?>
-            <li class="list-group-item border-0 mt-5"><input class="productADD" type="submit" value="SEND REQUEST"></input></li>
+            <li class="list-group-item border-0 mt-5"><input class="productADD" type="submit" name="submit_request" value="SEND REQUEST"></input></li>
           </ul>
         </div>
-        </form>
 
     </div>
   </div>

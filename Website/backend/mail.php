@@ -10,7 +10,7 @@ $formcontent="From: $name , EMail: $email Phone: $phone, Country: $country , Cit
 $subject = "Request";
 $mailheader = "From: $name ";
 
-if (isset($_POST['submit'])) {
+if (isset($_POST['submit_request'])) {
 mail('erito31@gmail.com', $subject, $formcontent ) or die ("Error!");
 }
 echo "<script type='text/javascript'>alert('Mail sent successfully!')</script>";

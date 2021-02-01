@@ -40,8 +40,8 @@ function my_shopping_cart_total_product_count() {
                     <li><a href="../artists/artists.php"> artists</a></li>
                     <li>
                         <div class="dropdown">
-                            <a href="../ArtCategories/art_categories.php"> <span class="dropbtn">categories <i class="fa fa-caret-down d-none d-lg-inline"></i>
-                        </span></a> 
+                             <span class="dropbtn"><a href="../ArtCategories/art_categories.php">categories</a> <i class="fa fa-caret-down d-none d-lg-inline"></i>
+                        </span> 
                             <div class="dropdown-content">
                             <?php while($row = mysqli_fetch_assoc($result_category)){
                             echo '<a href="../art_category_info/art_info.php?id=' . $row['category_id'] . '"> '. $row["category"] .'</a>';
