@@ -29,6 +29,7 @@ $result_category = $conn->query($sql_category);
                     <li><a href="../product/product.php">add product</a></li>
                     <li><a href="../news/news.php"> add news</a></li>
                     <li><a href="../contact/contact.php"> redact contact</a></li>
+                    <li><a href="../login/logout.php" class="btn btn-danger">Sign Out</a></li>
                   
                 </ul>
             </div>
