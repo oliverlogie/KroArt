@@ -4,6 +4,7 @@ $result_news = $conn->query($sql_news);
 ?>
 
 <main>
+  <div class="carousel justify-content-center">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators" id="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -54,7 +55,7 @@ $result_news = $conn->query($sql_news);
           <span class="sr-only">Next</span>
         </a>
     </div>
-
+  </div>
     <?php
       echo '<div class="container home-container  pt-5 mt-5 ">';
       echo '<h1><span class="news_line">Lastest news</span></h1>';

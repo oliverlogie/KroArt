@@ -137,6 +137,7 @@ $fk_artist_id="";
 $fk_category = "";
 $measurement = "";
 $fk_technic = "";
+$lastname_artist="";
 $price = 0;
 $artwork_id=0;
 $updateArtwork="";
@@ -154,34 +155,38 @@ if (isset($_POST['saveArtwork'])) {
 	$price = $_POST['price'];
 	$pictureProduct = basename($_FILES["pictureProduct"]["name"]);
 
-	$sqlP = "Insert into artwork(name_pic, picture, price, measurement, fk_category, fk_technic, fk_artist_id) VALUES  ('$name_pic','$pictureProduct','$price','$measurement','$fk_category','$fk_technic','$fk_artist_id')"or die ($db->error());
+	$sqlP = "Insert into artwork (name_pic, picture, price, measurement) VALUES  ('$name_pic','$pictureProduct','$price','$measurement');
+	Insert into artist name Values ('$fk_artist_id');
+	Insert into category category Values ('$fk_category');
+	Insert into technic technic) Values ('$fk_technic') "or die ($db->error());
 	$result = mysqli_query($db,$sqlP);
 	header('location:../product/product.php');
 
-};
+}
 
 if(isset($_GET['deleteArtwork'])){
 	$artwork_id = $_GET['deleteArtwork'];
-	$db->query("DELETE from artwork WHERE artwork_id=$artwork_id") or die ($db->error());
+	$db->query("Delete from artist WHERE artist_id=$artist_id") or die ($db->error());
 	header('location:../product/product.php');
 
-};
+}
 if(isset($_GET['editArtwork'])){
 	$artwork_id = $_GET['editArtwork'];
 	$updateArtwork = true;
-	$result= $db->query("Select * artwork WHERE artwork_id=$artwork_id") or die ($db->error());
-	if(($result)==1){
-		$row = $result->fetch_assoc();
+	$resultArtwork= $db->query("SELECT * FROM (((artwork INNER JOIN artist ON artwork.fk_artist_id = artist.artist_id)INNER JOIN technic ON fk_technic = technic_id)INNER JOIN category ON fk_category=category_id) Where artwork_id=$artwork_id") or die ($db->error());
+	if(($resultArtwork)==1){
+		$row = $resultArtwork->fetch_assoc();
 		$name_pic = $row['name_pic'];
-		$fk_artist_id = $row['fk_artist_id'];
-		$fk_category = $row['fk_category'];
+		$fk_artist_id = $row['name'];
+		$lastname_artist = $row['lastname'];
+		$fk_category = $row['category'];
 		$measurement = $row['measurement'];
-		$fk_technic = $row['fk_technic'];
+		$fk_technic = $row['technic'];
 		$price = $row['price'];
 		$pictureProduct = $row['picture'];
 		
 	}
-};
+}
 
 if(isset($_POST['updateArtwork'])){
 	$artwork_id=$_POST['artwork_id'];

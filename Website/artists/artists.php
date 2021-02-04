@@ -3,8 +3,9 @@ $sql_artist = "SELECT artist.artist_id, artist.name,artist.lastname, picture, ss
 $result_artist = $conn->query($sql_artist);
 ?>
 <main>
-  <div class="container text-center pt-5 pb-5">
-      <h1>Artists</h1>
+<h1 class=" pt-5 text-center" >Artists</h1>
+
+  <div class="container artistsContainer text-center  pb-5">
       <div class="row artistsCard d-flex mt-5">
       <?php
         if(mysqli_num_rows($result_artist) > 0){

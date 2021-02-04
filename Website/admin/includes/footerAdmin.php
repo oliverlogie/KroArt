@@ -1,32 +1,16 @@
 <footer>
 <div class="container p-4"> 
-    <div class="row d-block d-xl-flex d-lg-flex d-md-flex   justify-content-center rowFooter">
-      <div class="col-lg-3 d-none d-lg-flex d-md-flex  iconFooter">
-        <a href="https://www.instagram.com/artwork_vienna/"><img src="../../img/insta-icon.png" alt="insta-icon"></a>
-        <a href="https://www.facebook.com/ArtworkCoworking/"><img src="../../img/fb-icon.png" alt="fb-icon"></a>
+    <div class="row d-block d-xl-flex d-lg-flex d-md-flex justify-content-between rowFooter">
+      <div class="col-lg-6 col-md-6 col-sm-12 d-flex  ">
+      <a href="../../Home/index.php "><img class="logo" src="../../img/logo_01.png" alt="logo"></a>
+      
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-12 ">
-        <ul>
-          <li><a href="">Impressum</a></li>
-          <li><a href="">Datenschutz</a></li>
-        </ul>
+      <div class="col-lg-6 col-md-6 col-sm-12 text-right ">
+      <li><a href="../login/logout.php" class="btn btn-danger ">Sign Out</a></li>
+       
       </div>
-      <div class="col-lg-3 ">
-        <ul class="d-none d-lg-block d-md-block ">
-          <li><a href="../../News/news.php"> news</a></li>
-          <li><a href="../../About/about.php"> about</a></li>
-          <li><a href="../../Contact/contact.php">Contact</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-12">
-        <ul class="d-block">
-          <li><a href="" class="newsletter mb-3">Newsletter</a></li>
-          <li><form action="/action_page.php" class="d-flex searchFooter">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form></li>
-        </ul>
-      </div>
+    
+    
     </div>
   </div>
 </footer>

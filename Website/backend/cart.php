@@ -22,6 +22,7 @@ if(isset($_POST["add_to_cart"]))
 
 			);
 			$_SESSION["shopping_cart"][$count] = $item_array;
+			echo '<script>alert("Item has been Added to your Cart")</script>';
 		}
 		else
 		{

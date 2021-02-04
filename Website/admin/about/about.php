@@ -1,5 +1,13 @@
 <?php include('../backend/php_code.php');?>
 <?php  include_once('../includes/navbarAdmin.php') ?>
+<?php
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: ../login/login.php");
+    exit;
+}
+?>
 
 <main>
 

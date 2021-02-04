@@ -12,7 +12,7 @@ if(isset($_SERVER['HTTP_REFERER'])) {
 
     <?php
     $row = mysqli_fetch_assoc($result_pic);
-      echo '<form method="post" action="../collect/collect.php?action=add&id=' . $row["artwork_id"] . '">';
+      echo '<form method="post" action="../product_info/product_info.php?action=add&id=' . $row["artwork_id"] . '">';
       echo '<div class="row d-block d-lg-flex d-md-flex justify-content-center productInfo">';
       echo '<div class="col-lg-6 col-md-6 col-sm-12 pb-5 text-center">';
       echo '<img src="../img/'. $row["picture"] .'" alt="">';
